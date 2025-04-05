@@ -5,30 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
+    <nav> 
+        <a href="index.html">Home</a>
+        <a href="contacts/">Contacts</a> 
+        <a href="projects/">Projects</a>
+    </nav>
 </head>
 <body>
     <h1>Contacts</h1>
 
     <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-        <label>
-            Your Email:
+        <label>Email:
             <input type="email" name="email" value="example@email.com">
         </label>
-        <br><br>
 
-        <label>
-            Subject:
+        <label>Subject:
             <input name="subject" value="Contact Request">
         </label>
-        <br><br>
 
-        <label>
-            Message:
-            <textarea name="body" rows="5" cols="30">Type your message here...</textarea>
+        <label>Body:
+            <textarea name="body" rows="2" cols="20">Type your message here...</textarea>
         </label>
-        <br><br>
 
-        <button>Send</button>
+        <button>Submit</button>
     </form>
 </body>
 </html>
