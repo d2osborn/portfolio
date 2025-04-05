@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title> 
-    <h1>Contacts</h1>
+    <title>Contacts</title>
 </head>
 <body>
-    
+    <h1>Contacts</h1>
+
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+        <label>
+            Your Email:
+            <input type="email" name="email" value="example@email.com">
+        </label>
+        <br><br>
+
+        <label>
+            Subject:
+            <input name="subject" value="Contact Request">
+        </label>
+        <br><br>
+
+        <label>
+            Message:
+            <textarea name="body" rows="5" cols="30">Type your message here...</textarea>
+        </label>
+        <br><br>
+
+        <button>Send</button>
+    </form>
 </body>
 </html>
