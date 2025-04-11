@@ -46,8 +46,9 @@ form {
   display: grid;
   gap: 1em;
   max-width: 40rem;
-  margin: 0; 
-  padding-left: 1rem; 
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: 1rem;
 }
 
 .form-row {
