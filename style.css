@@ -83,5 +83,33 @@ button:hover {
   color: white;
   cursor: pointer;
 }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+.projects article h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 400%;
+  line-height: 1.1;
+  /* text-wrap: balance; */  /* ← remove or comment this */
+}
+
+h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  /* text-wrap: balance; */  /* ← remove or comment this */
+}
+  
   /* Set line height to 1.5 times the font size
        and use the OS’s UI font as the website font */
