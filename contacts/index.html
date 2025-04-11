@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacts</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <nav>
@@ -15,16 +15,19 @@
   </nav>
   <h1>Contacts</h1>
   <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-    <label>Email:
-      <input type="email" name="email" value="example@email.com">
-    </label>
-    <label>Subject:
-      <input name="subject" value="Contact Request">
-    </label>
-    <label>Body:
-      <textarea name="body" rows="2" cols="20">Type your message here...</textarea>
-    </label>
-    <button>Submit</button>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" value="example@email.com">
+    </div>
+    <div>
+      <label for="subject">Subject:</label>
+      <input id="subject" name="subject" value="Contact Request">
+    </div>
+    <div>
+      <label for="body">Body:</label>
+      <textarea id="body" name="body" rows="2" cols="20">Type your message here...</textarea>
+    </div>
+    <button type="submit">Submit</button>
   </form>
 </body>
 </html>
