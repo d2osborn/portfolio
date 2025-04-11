@@ -4,9 +4,9 @@ body {
   font: 100%/1.5 system-ui;
   font-size: clamp(1rem, 1vw + 0.5rem, 1.25rem);
   line-height: 1.5;
-  max-width: 100ch;
-  margin-inline: max(1em, (100% - 100ch) / 2);
-  margin-block: 1em;
+  max-width: 70ch;
+  margin-inline: max(0.5em, (100% - 70ch) / 2);
+  margin-block: 0.75em;
 }
 
 nav {
@@ -28,8 +28,11 @@ nav a:hover {
 
 img {
   display: block;
-  max-width: 100%;
+  width: clamp(150px, 40%, 300px);
   height: auto;
   margin-inline: auto;
   border-radius: 50%;
 }
+
+  /* Set line height to 1.5 times the font size
+       and use the OS’s UI font as the website font */
