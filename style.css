@@ -44,31 +44,33 @@ nav a:hover {
 
 form {
   display: grid;
+  gap: 1em;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
   grid-template-columns: auto 1fr;
   gap: 1em;
+  align-items: baseline;
 }
 
-form div {
-  display: contents;
+.form-row label {
+  text-align: right;
 }
 
-form label {
-  grid-column: 1;
-}
-
-form input,
-form textarea {
+.form-row input,
+.form-row textarea {
   font: inherit;
-  display: block;
   width: 100%;
   box-sizing: border-box;
-  grid-column: 2;
 }
 
-form button {
+.form-row button {
   font: inherit;
-  grid-column: 1 / -1;
-  padding: 0.5em;
+  padding: 0.5em 1em;
+  grid-column: 2;
 }
   /* Set line height to 1.5 times the font size
        and use the OS’s UI font as the website font */

@@ -15,19 +15,21 @@
   </nav>
   <h1>Contacts</h1>
   <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-    <div>
+    <div class="form-row">
       <label for="email">Email:</label>
-      <input id="email" type="email" name="email" value="example@email.com">
+      <input id="email" type="email" name="email" value="example@email">
     </div>
-    <div>
+    <div class="form-row">
       <label for="subject">Subject:</label>
       <input id="subject" name="subject" value="Contact Request">
     </div>
-    <div>
-      <label for="body">Body:</label>
-      <textarea id="body" name="body" rows="2" cols="20">Type your message here...</textarea>
+    <div class="form-row">
+      <label for="body">Message:</label>
+      <textarea id="body" name="body" rows="3" cols="30">Type your message here...</textarea>
     </div>
-    <button type="submit">Submit</button>
+    <div class="form-row">
+      <button>Send</button>
+    </div>
   </form>
 </body>
 </html>
