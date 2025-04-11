@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacts</title>
   <link rel="stylesheet" href="../style.css" />
@@ -10,26 +9,21 @@
 <body>
   <nav>
     <a href="../index.html">Home</a>
-    <a href="index.html">Contacts</a>
+    <a href="index.html" class="current">Contacts</a>
     <a href="../projects/index.html">Projects</a>
     <a href="../resume/index.html">Resume</a>
   </nav>
-
   <h1>Contacts</h1>
-
   <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
     <label>Email:
       <input type="email" name="email" value="example@email.com">
     </label>
-
     <label>Subject:
       <input name="subject" value="Contact Request">
     </label>
-
     <label>Body:
       <textarea name="body" rows="2" cols="20">Type your message here...</textarea>
     </label>
-
     <button>Submit</button>
   </form>
 </body>
