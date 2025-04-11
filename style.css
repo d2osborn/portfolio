@@ -45,39 +45,43 @@ nav a:hover {
 
 form {
   display: grid;
+  grid-template-columns: auto 1fr;
   gap: 1em;
   max-width: 40rem;
-  margin-left: 0;
-  margin-right: auto;
-  padding-left: 1rem;
+  margin: 1em 0;
 }
 
 .form-row {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1em;
-  align-items: baseline;
-  width: 100%;
+  display: contents; 
 }
 
-.form-row label {
+label {
+  grid-column: 1;
   text-align: right;
+  align-self: center;
 }
 
-.form-row input,
-.form-row textarea {
-  font: inherit;
+input,
+textarea {
+  grid-column: 2;
   width: 100%;
+  font: inherit;
   box-sizing: border-box;
-  resize: vertical; 
+  resize: vertical;
 }
 
-.form-row button {
-  font: inherit;
+button {
+  grid-column: 1 / -1;
   padding: 0.5em 1em;
-  grid-column: 1 / -1; 
-  width: 100%;       
+  width: 100%;
+  font: inherit;
   box-sizing: border-box;
+}
+
+button:hover {
+  background-color: var(--color-accent);
+  color: white;
+  cursor: pointer;
 }
   /* Set line height to 1.5 times the font size
        and use the OS’s UI font as the website font */
