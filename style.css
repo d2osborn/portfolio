@@ -57,6 +57,7 @@ form {
   grid-template-columns: auto 1fr;
   gap: 1em;
   align-items: baseline;
+  width: 100%;
 }
 
 .form-row label {
@@ -68,12 +69,15 @@ form {
   font: inherit;
   width: 100%;
   box-sizing: border-box;
+  resize: vertical; 
 }
 
 .form-row button {
   font: inherit;
   padding: 0.5em 1em;
-  grid-column: 2;
+  grid-column: 1 / -1; 
+  width: 100%;       
+  box-sizing: border-box;
 }
   /* Set line height to 1.5 times the font size
        and use the OS’s UI font as the website font */
