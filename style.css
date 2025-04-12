@@ -75,11 +75,15 @@ button {
   grid-column: 1 / -1;
   background-color: var(--color-accent);
   color: white;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
   border: none;
   border-radius: 0.25em;
   cursor: pointer;
-  padding: 0.75em 1.5em;
+  font: inherit;
   font-weight: bold;
+  text-align: center;
+  width: fit-content;
 }
 
 button:hover {
