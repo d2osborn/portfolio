@@ -47,35 +47,37 @@ form {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1em;
-  max-width: 40rem;
-  margin: 1em 0;
-}
-
-.form-row {
-  display: contents; 
 }
 
 label {
-  grid-column: 1;
-  text-align: right;
-  align-self: center;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  margin-block: 0.5em;
 }
 
 input,
-textarea {
-  grid-column: 2;
-  width: 100%;
+textarea,
+button {
   font: inherit;
+  width: 100%;
   box-sizing: border-box;
-  resize: vertical;
+  padding: 0.5em;
 }
 
 button {
   grid-column: 1 / -1;
-  padding: 0.5em 1em;
-  width: 100%;
-  font: inherit;
-  box-sizing: border-box;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
 }
 
 button:hover {
