@@ -23,6 +23,9 @@ for (let p of pages) {
   let rawUrl = p.url;
   let title = p.title;
   let url = !rawUrl.startsWith('http') ? BASE_PATH + rawUrl : rawUrl;
+  
+  console.log(`Creating link for: ${title} → ${url}`);
+
   let a = document.createElement('a');
   a.href = url;
   a.textContent = title;
