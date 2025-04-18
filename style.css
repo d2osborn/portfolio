@@ -8,6 +8,9 @@ html {
   color-scheme: light dark;
   background-color: canvas;
   color: canvastext;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -28,28 +31,41 @@ img {
   display: block;
 }
 
+img.profile {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
 nav {
   display: flex;
+  justify-content: center;
+  gap: 0;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 1.5em;
+  padding: 0.75em 0;
+  margin-bottom: 2em;
 }
 
 nav a {
-  flex: 1;
+  font-size: 1.5rem;         
+  font-weight: 500;
+  padding: 0.5em 1em;         
   text-decoration: none;
   color: inherit;
-  text-align: center;
-  padding: 0.5em;
-  border-bottom: 0.1em solid transparent;
+  border-bottom: 0.2em solid transparent;
+  transition: border-color 0.2s ease;
+  margin: 0;                 
+  display: inline-block;
 }
 
 nav a.current {
-  border-bottom: 0.4em solid var(--border-color);
-  padding-bottom: calc(0.5em - 0.3em);
+  font-weight: 600;
+  border-color: var(--border-color);
 }
 
 nav a:hover {
-  border-bottom: 0.4em solid var(--color-accent);
+  border-color: var(--color-accent);
   background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
@@ -68,11 +84,10 @@ label {
 
 input,
 textarea,
-button {
+button,
+select {
   font: inherit;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0.5em;
+  font-size: 1rem;
 }
 
 button {
@@ -98,6 +113,37 @@ button:hover {
   background-color: var(--color-accent);
   color: white;
   cursor: pointer;
+}
+
+label.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  white-space: nowrap;
+  background: none;
+  color: inherit;
+  z-index: 1000;
+}
+
+label.color-scheme select {
+  background: none;
+  color: inherit;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  padding: 0 0.25em;
+  appearance: none;
+  cursor: pointer;
+  width: auto;
+}
+
+label.color-scheme select:focus {
+  outline: none;
+  border-color: var(--color-accent);
 }
 
 .projects {
