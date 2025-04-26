@@ -162,6 +162,29 @@ label.color-scheme select:focus {
   margin: 0;
 }
 
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#profile-stats dt {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: gray;
+  grid-row: 1;
+}
+
+#profile-stats dd {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+  grid-row: 2;
+}
+
 h1 {
   font-size: 2.5rem;
   line-height: 1.2;

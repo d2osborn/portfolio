@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Project 1",
+      "year": "2023",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Placeholder description for Project 1."
+    },
+    {
+      "title": "Project 2",
+      "year": "2024",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Placeholder description for Project 2."
+    },
+    {
+        "title": "Project 3",
+        "year": "2023",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Placeholder description for Project 1."
+      },
+      {
+        "title": "Project 4",
+        "year": "2024",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Placeholder description for Project 2."
+      },
+      {
+        "title": "Project 5",
+        "year": "2023",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Placeholder description for Project 1."
+      },
+      {
+        "title": "Project 6",
+        "year": "2024",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Placeholder description for Project 2."
+      },
+      {
+        "title": "Project 7",
+        "year": "2023",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Placeholder description for Project 1."
+      },
+      {
+        "title": "Project 8",
+        "year": "2024",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Placeholder description for Project 2."
+      },
+      {
+          "title": "Project 9",
+          "year": "2023",
+          "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+          "description": "Placeholder description for Project 1."
+        },
+        {
+          "title": "Project 10",
+          "year": "2024",
+          "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+          "description": "Placeholder description for Project 2."
+        },
+        {
+          "title": "Project 11",
+          "year": "2023",
+          "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+          "description": "Placeholder description for Project 1."
+        },
+        {
+          "title": "Project 12",
+          "year": "2024",
+          "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+          "description": "Placeholder description for Project 2."
+        }
+  ]
