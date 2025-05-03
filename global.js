@@ -30,7 +30,10 @@ for (let p of pages) {
   a.href = url;
   a.textContent = title;
   a.classList.toggle('current', a.host === location.host && a.pathname === location.pathname);
-  a.toggleAttribute('target', a.host !== location.host);
+  if (a.host !== location.host) {
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  }
   nav.append(a);
 }
 
@@ -107,7 +110,12 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     article.innerHTML = `
       <${headingLevel}>${project.title ?? 'Untitled Project'}</${headingLevel}>
       <img src="${project.image ?? ''}" alt="${project.title ?? 'Project image'}">
-      <p>${project.description ?? 'No description available.'}</p>
+      <div>
+        <p>${project.description ?? 'No description available.'}</p>
+        <p style="font-family: Baskerville, serif; font-style: italic; font-variant-numeric: oldstyle-nums; margin-top: 0.25em;">
+          c. ${project.year ?? '—'}
+        </p>
+      </div>
     `;
     containerElement.appendChild(article);
   }
