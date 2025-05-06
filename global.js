@@ -9,7 +9,8 @@ let pages = [
   { url: 'projects/', title: 'Projects' },
   { url: 'resume/', title: 'Resume' },
   { url: 'contacts/', title: 'Contacts' },
-  { url: 'https://github.com/d2osborn', title: 'GitHub' }
+  { url: 'https://github.com/d2osborn', title: 'GitHub' },
+  { url: 'https://www.linkedin.com/in/diego-osborn/', title: 'LinkedIn'}
 ];
 
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
@@ -112,6 +113,9 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
       <img src="${project.image ?? ''}" alt="${project.title ?? 'Project image'}">
       <div>
         <p>${project.description ?? 'No description available.'}</p>
+        <div class="project-tags">
+          ${(project.tags ?? []).map(tag => `<span class="tag">${tag}</span>`).join('')}
+        </div>
         <p style="font-family: Baskerville, serif; font-style: italic; font-variant-numeric: oldstyle-nums; margin-top: 0.25em;">
           c. ${project.year ?? '—'}
         </p>

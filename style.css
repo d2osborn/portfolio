@@ -316,6 +316,76 @@ path {
   color: canvastext;
 }
 
+.narrow {
+  max-width: 75ch;
+  margin: 0 auto;
+  padding-inline: 1em;
+}
+
+.resume-section {
+  margin-bottom: 2.5em;
+}
+
+.resume-section > h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.25em;
+}
+
+.entry {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1em;
+  margin-bottom: 1.5em;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+  flex-wrap: wrap;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 0.5em;
+}
+
+.entry-header .entry-dates {
+  color: var(--color-accent); 
+  padding: 0.15em 0.5em;
+  border-radius: 0.25em;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.entry p {
+  margin: 0.5em 0 0 0;
+  line-height: 1.5;
+}
+
+.entry img {
+  margin-top: 1em;
+  max-width: 100%;
+  border-radius: 0.25em;
+}
+
+.project-tags {
+  margin-top: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.tag {
+  background-color: var(--color-accent);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.3em 0.6em;
+  border-radius: 0.4em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 h1 {
 font-size: 2.5rem;
 line-height: 1.2;
