@@ -109,7 +109,11 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   for (let project of projects) {
     const article = document.createElement('article');
     article.innerHTML = `
-      <${headingLevel}>${project.title ?? 'Untitled Project'}</${headingLevel}>
+      <${headingLevel}>
+        ${project.link
+          ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.title}</a>`
+          : project.title ?? 'Untitled Project'}
+      </${headingLevel}>
       <img src="${project.image ? BASE_PATH + project.image : ''}" alt="${project.title ?? 'Project image'}">
       <div>
         <p>${project.description ?? 'No description available.'}</p>
