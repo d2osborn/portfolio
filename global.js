@@ -110,7 +110,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     const article = document.createElement('article');
     article.innerHTML = `
       <${headingLevel}>${project.title ?? 'Untitled Project'}</${headingLevel}>
-      <img src="${project.image ? BASE_PATH + project.image.replace(/^\/?/, '') : ''}" alt="${project.title ?? 'Project image'}">
+      <img src="${project.image ? BASE_PATH + project.image : ''}" alt="${project.title ?? 'Project image'}">
       <div>
         <p>${project.description ?? 'No description available.'}</p>
         <div class="project-tags">

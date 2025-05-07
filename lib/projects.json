@@ -2,7 +2,7 @@
     {
       "title": "Home Price Evaluator: Determining Market Value",
       "year": "2025",
-      "image": "../images/delesign-real-estate-market.svg",
+      "image": "images/delesign-real-estate-market.svg",
       "description": "Collaborated to develop and optimize a LightGBM regression model on 2.2M+ real estate listings, integrating geospatial, demographic, and economic data to enhance price predictions. Engineered zip code-level features by calculating proximity to universities using the haversine formula and applying geodemographic segmentation to classify homes into home type (e.g., ranch, luxury home, tiny home, etc.). Created a valuation framework comparing listed vs. predicted prices, identifying 10.5% of properties as undervalued, enabling investors to target high-potential opportunities.",
       "tags": ["Machine Learning", "Data Science", "Regression"]
     },
