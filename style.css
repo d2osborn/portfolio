@@ -229,6 +229,12 @@ aspect-ratio: 1 / 1;
 flex: 1 1 auto;
 }
 
+#chart-wrapper {
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}
+
 .legend {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
@@ -396,6 +402,162 @@ path {
 .projects article h2 a:hover,
 .projects article h3 a:hover {
   text-decoration: underline;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 2em 0;
+  font-family: sans-serif;
+}
+
+.stats dt {
+  font-weight: bold;
+  font-size: 0.75em;
+  color: #667;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25em;
+}
+
+.stats dd {
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.gridlines line {
+  stroke: #ccc;
+  stroke-opacity: 0.4;
+  shape-rendering: crispEdges;
+}
+
+.gridlines path {
+  display: none;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25em 1em;
+  margin: 0;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  font-family: sans-serif;
+  font-size: 0.875em;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25em 0.75em;
+  margin: 0;
+}
+
+dl.info dt {
+  font-weight: 600;
+  color: #aaa;
+  margin: 0;
+}
+
+dl.info dd {
+  margin: 0;
+  color: #f8f8f8;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  pointer-events: none;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: transform 200ms, fill-opacity 200ms;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+  stroke: white;
+  stroke-width: 1.5px;
+}
+
+#commit-tooltip {
+  display: none;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  z-index: 999;
+  background: rgba(32, 32, 32, 0.9);
+  color: #f0f0f0;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  padding: 0.5em 0.75em;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  max-width: 240px;
+  opacity: 1;
+  transition: opacity 200ms ease;
+}
+
+#language-breakdown {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.lang-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.lang-type {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+.lang-value {
+  font-size: 1em;
+  color: #aaa;
+}
+
+.lang-percent {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+#background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* 🛠 don't intercept mouse events */
 }
 
 h1 {

@@ -16,7 +16,7 @@
       "link": "https://github.com/d2osborn/Spotify-Popularity-Analyzer"
     },
     {
-        "title": "Energy Demand Forecaster: Predicting Regional Energy Consumption",
+        "title": "Power Outages Statistical Analysis",
         "year": "2024",
         "image": "images/delesign-alternative-energy-sources.svg",
         "description": "Analyzed U.S. power outage data (2000-2016) to identify key factors affecting major outages; built a RandomForestRegressor model for energy consumption to help power companies improve outage response. Engineered features related to seasonality, climate, economic indicators, and region; conducted hypothesis testing and missingness analysis; implemented a machine learning pipeline for regression modeling.",
