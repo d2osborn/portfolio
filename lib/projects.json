@@ -8,7 +8,7 @@
     "link": "https://github.com/d2osborn/home-price-evaluator"
   },
   {
-    "title": "Spotify Popularity Analyzer: Decoding the Sound of a Hit",
+    "title": "Spotify Popularity Analysis: Decoding the Sound of a Hit",
     "year": "2025",
     "image": "images/icons8-spotify-96.svg",
     "description": "Collaborated to analyze 100,000+ Spotify tracks with hypothesis testing and PCA to identify key audio features influencing song popularity, helping artists and streaming platforms optimize advertising strategies. Built a logistic regression model to determine the factors that differentiate ”popular” from ”not popular” songs, with an AUC score of 0.6226--slightly better than random guessing.",
