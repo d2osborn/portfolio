@@ -1,98 +1,98 @@
 [
-    {
-      "title": "Home Price Evaluator: Determining Market Value",
-      "year": "2025",
-      "image": "images/delesign-real-estate-market.svg",
-      "description": "Collaborated to develop and optimize a LightGBM regression model on 2.2M+ real estate listings, integrating geospatial, demographic, and economic data to enhance price predictions. Engineered zip code-level features by calculating proximity to universities using the haversine formula and applying geodemographic segmentation to classify homes into home type (e.g., ranch, luxury home, tiny home, etc.). Created a valuation framework comparing listed vs. predicted prices, identifying 10.5% of properties as undervalued, enabling investors to target high-potential opportunities.",
-      "tags": ["Machine Learning", "Data Science", "Regression"],
-      "link": "https://github.com/d2osborn/home-price-evaluator"
-    },
-    {
-      "title": "Spotify Popularity Analyzer: Decoding the Sound of a Hit",
-      "year": "2025",
-      "image": "images/icons8-spotify-96.svg",
-      "description": "Collaborated to analyze 100,000+ Spotify tracks with hypothesis testing and PCA to identify key audio features influencing song popularity, helping artists and streaming platforms optimize advertising strategies. Built a logistic regression model to determine the factors that differentiate ”popular” from ”not popular” songs, with an AUC score of 0.6226--slightly better than random guessing.",
-      "tags": ["Statistical Analysis", "Data Analysis"],
-      "link": "https://github.com/d2osborn/Spotify-Popularity-Analyzer"
-    },
-    {
-        "title": "Power Outages Statistical Analysis",
-        "year": "2024",
-        "image": "images/delesign-alternative-energy-sources.svg",
-        "description": "Analyzed U.S. power outage data (2000-2016) to identify key factors affecting major outages; built a RandomForestRegressor model for energy consumption to help power companies improve outage response. Engineered features related to seasonality, climate, economic indicators, and region; conducted hypothesis testing and missingness analysis; implemented a machine learning pipeline for regression modeling.",
-        "tags": ["Machine Learning", "Statistical Analysis", "Data Science", "Regression"],
-        "link": "https://github.com/d2osborn/Power-Outages"
-      },
-      {
-        "title": "PSCL Interactive Dashboard",
-        "year": "2023",
-        "image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
-        "description": "To facilitate visualization and analysis, I developed an interactive Looker Studio dashboard with key features including: Pitching Metrics, such as maximum and average velocity/spin rate tables, pitch distribution pie charts, and pitch result bar graphs, and Hitting Metrics, such as tables displaying maximum exit velocity, average launch angle, and average exit velocity for individual players and pitch types. This dashboard provided a user-friendly interface for coaches and players to track their performance and showcase their metrics to any college scouts.",
-        "tags": ["Data Visualization", "Baseball"],
-        "link": "https://github.com/d2osborn/PSCL-Summer-Project"
-      },
-      {
-        "title": "Project 5",
-        "year": "2024",
-        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Placeholder description for Project 1.",
-        "tags": ["Placeholder"],
-        "link": "#"
-      },
-      {
-        "title": "Project 6",
-        "year": "2024",
-        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Placeholder description for Project 2.",
-        "tags": ["Placeholder"],
-        "link": "#"
-      },
-      {
-        "title": "Project 7",
-        "year": "2025",
-        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Placeholder description for Project 1.",
-        "tags": ["Placeholder"],
-        "link": "#"
-      },
-      {
-        "title": "Project 8",
-        "year": "2025",
-        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Placeholder description for Project 2.",
-        "tags": ["Placeholder"],
-        "link": "#"
-      },
-      {
-          "title": "Project 9",
-          "year": "2025",
-          "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-          "description": "Placeholder description for Project 1.",
-          "tags": ["Placeholder"],
-          "link": "#"
-        },
-        {
-          "title": "Project 10",
-          "year": "2026",
-          "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-          "description": "Placeholder description for Project 2.",
-          "tags": ["Placeholder"],
-          "link": "#"
-        },
-        {
-          "title": "Project 11",
-          "year": "2022",
-          "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-          "description": "Placeholder description for Project 1.",
-          "tags": ["Placeholder"],
-          "link": "#"
-        },
-        {
-          "title": "Project 12",
-          "year": "2025",
-          "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-          "description": "Placeholder description for Project 2.",
-          "tags": ["Placeholder"],
-          "link": "#"
-        }
-  ]
+  {
+    "title": "Home Price Evaluator: Determining Market Value",
+    "year": "2025",
+    "image": "images/delesign-real-estate-market.svg",
+    "description": "Collaborated to develop and optimize a LightGBM regression model on 2.2M+ real estate listings, integrating geospatial, demographic, and economic data to enhance price predictions. Engineered zip code-level features by calculating proximity to universities using the haversine formula and applying geodemographic segmentation to classify homes into home type (e.g., ranch, luxury home, tiny home, etc.). Created a valuation framework comparing listed vs. predicted prices, identifying 10.5% of properties as undervalued, enabling investors to target high-potential opportunities.",
+    "tags": ["Machine Learning", "Data Science"],
+    "link": "https://github.com/d2osborn/home-price-evaluator"
+  },
+  {
+    "title": "Spotify Popularity Analyzer: Decoding the Sound of a Hit",
+    "year": "2025",
+    "image": "images/icons8-spotify-96.svg",
+    "description": "Collaborated to analyze 100,000+ Spotify tracks with hypothesis testing and PCA to identify key audio features influencing song popularity, helping artists and streaming platforms optimize advertising strategies. Built a logistic regression model to determine the factors that differentiate ”popular” from ”not popular” songs, with an AUC score of 0.6226--slightly better than random guessing.",
+    "tags": ["Statistical Analysis", "Data Analysis"],
+    "link": "https://github.com/d2osborn/Spotify-Popularity-Analyzer"
+  },
+  {
+    "title": "Power Outages Statistical Analysis",
+    "year": "2024",
+    "image": "images/delesign-alternative-energy-sources.svg",
+    "description": "Analyzed U.S. power outage data (2000-2016) to identify key factors affecting major outages; built a RandomForestRegressor model for energy consumption to help power companies improve outage response. Engineered features related to seasonality, climate, economic indicators, and region; conducted hypothesis testing and missingness analysis; implemented a machine learning pipeline for regression modeling.",
+    "tags": ["Machine Learning", "Statistical Analysis", "Data Science"],
+    "link": "https://github.com/d2osborn/Power-Outages"
+  },
+  {
+    "title": "PSCL Interactive Dashboard",
+    "year": "2023",
+    "image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
+    "description": "To facilitate visualization and analysis, I developed an interactive Looker Studio dashboard with key features including: Pitching Metrics, such as maximum and average velocity/spin rate tables, pitch distribution pie charts, and pitch result bar graphs, and Hitting Metrics, such as tables displaying maximum exit velocity, average launch angle, and average exit velocity for individual players and pitch types. This dashboard provided a user-friendly interface for coaches and players to track their performance and showcase their metrics to any college scouts.",
+    "tags": ["Data Visualization", "Baseball"],
+    "link": "https://github.com/d2osborn/PSCL-Summer-Project"
+  },
+  {
+    "title": "Project 5",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder description for Project 1.",
+    "tags": ["Placeholder"],
+    "link": "#"
+  },
+  {
+    "title": "Project 6",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder description for Project 2.",
+    "tags": ["Placeholder"],
+    "link": "#"
+  },
+  {
+    "title": "Project 7",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder description for Project 1.",
+    "tags": ["Placeholder"],
+    "link": "#"
+  },
+  {
+    "title": "Project 8",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder description for Project 2.",
+    "tags": ["Placeholder"],
+    "link": "#"
+  },
+  {
+    "title": "Project 9",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder description for Project 1.",
+    "tags": ["Placeholder"],
+    "link": "#"
+  },
+  {
+    "title": "Project 10",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder description for Project 2.",
+    "tags": ["Placeholder"],
+    "link": "#"
+  },
+  {
+    "title": "Project 11",
+    "year": "2022",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder description for Project 1.",
+    "tags": ["Placeholder"],
+    "link": "#"
+  },
+  {
+    "title": "Project 12",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder description for Project 2.",
+    "tags": ["Placeholder"],
+    "link": "#"
+  }
+]

@@ -263,6 +263,28 @@ border-radius: 50%;
 display: inline-block;
 }
 
+.legend-item {
+  opacity: 0.7;
+  cursor: pointer;
+  list-style: none;
+  padding: 4px 8px;
+  margin: 2px 0;
+  border-left: 5px solid var(--color);
+  transition: background-color 0.2s ease, opacity 0.2s;
+}
+
+.legend-item.selected {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.legend-item.hovered,
+path.hovered {
+  opacity: 1 !important;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
 /* Highlight hovered wedge in pie chart */
 #projects-pie-plot path {
   transition: opacity 300ms ease, transform 300ms ease;
