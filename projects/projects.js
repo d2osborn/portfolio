@@ -4,7 +4,6 @@ import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
 let selectedIndex = -1;
 let allProjects = [];
 let query = '';
-let tagData = [];
 
 function filterProjects() {
   return allProjects.filter(project => {
@@ -14,26 +13,16 @@ function filterProjects() {
 }
 
 function renderPieChart(projectsGiven) {
-  const tagCounts = new Map();
+  const rolledData = d3.rollups(projectsGiven, v => v.length, d => d.year);
+  const data = rolledData.map(([year, count]) => ({
+    label: year,
+    value: count
+  }));
 
-  projectsGiven.forEach(p => {
-    (p.tags || []).forEach(tag => {
-      tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
-    });
-  });
-
-  // Sort tagData so pie order matches legend
-  tagData = Array.from(tagCounts.entries())
-    .map(([label, value]) => ({ label, value }))
-    .sort((a, b) => b.value - a.value); // optional: sort by frequency
-
-  const color = d3.scaleOrdinal()
-    .domain(tagData.map(d => d.label)) // explicitly match tagData order
-    .range(d3.schemeTableau10.concat(d3.schemeSet3)); // extended color palette
-
-  const arcGenerator = d3.arc().innerRadius(15).outerRadius(50);
-  const sliceGenerator = d3.pie().value(d => d.value).sort(null);
-  const arcData = sliceGenerator(tagData);
+  const color = d3.scaleOrdinal(d3.schemeTableau10).domain(data.map(d => d.label));
+  const arcGenerator = d3.arc().innerRadius(15).outerRadius(50); // donut chart for cleaner center
+  const sliceGenerator = d3.pie().value(d => d.value);
+  const arcData = sliceGenerator(data);
 
   const svg = d3.select('#projects-pie-plot')
     .attr('width', 200)
@@ -43,7 +32,7 @@ function renderPieChart(projectsGiven) {
 
   svg.selectAll('*').remove();
 
-  const paths = svg.selectAll('path')
+  svg.selectAll('path')
     .data(arcData)
     .join('path')
     .attr('d', arcGenerator)
@@ -51,56 +40,42 @@ function renderPieChart(projectsGiven) {
     .attr('stroke', 'none')
     .attr('class', d => d.index === selectedIndex ? 'selected' : null)
     .on('click', function(event, d) {
-      selectedIndex = selectedIndex === d.index ? -1 : d.index;
+      const index = d.index;
+      selectedIndex = selectedIndex === index ? -1 : index;
       updateUI();
-    })
-    .on('mouseover', function(event, d) {
-      d3.select(this).classed('hovered', true);
-      d3.selectAll('.legend-item').filter((_, i) => i === d.index).classed('hovered', true);
-    })
-    .on('mouseout', function(event, d) {
-      d3.select(this).classed('hovered', false);
-      d3.selectAll('.legend-item').filter((_, i) => i === d.index).classed('hovered', false);
     });
 
   const legend = d3.select('.legend');
   legend.selectAll('*').remove();
 
   legend.selectAll('li')
-    .data(tagData)
+    .data(data)
     .join('li')
-    .attr('class', function(_, i) {
-      const base = 'legend-item';
-      const selected = i === selectedIndex ? 'selected' : '';
-      return `${base} ${selected}`.trim();
-    })
+    .attr('class', (_, i) => i === selectedIndex ? 'legend-item selected' : 'legend-item')
     .attr('style', d => `--color: ${color(d.label)}`)
-    .html(d => `${d.label} <em>(${d.value})</em>`)
-    .each(function(d, i) {
-      d3.select(this)
-        .on('click', function() {
-          selectedIndex = selectedIndex === i ? -1 : i;
-          updateUI();
-        })
-        .on('mouseover', function() {
-          d3.select(this).classed('hovered', true);
-          d3.select(svg.selectAll('path').nodes()[i]).classed('hovered', true);
-        })
-        .on('mouseout', function() {
-          d3.select(this).classed('hovered', false);
-          d3.select(svg.selectAll('path').nodes()[i]).classed('hovered', false);
-        });
+    .html(d => `<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`)
+    .data(data)
+    .join('li')
+    .each(function(_, i) {
+      d3.select(this).on('click', () => {
+        selectedIndex = selectedIndex === i ? -1 : i;
+        updateUI();
+      });
     });
 }
 
 function updateUI() {
-  const searchFiltered = filterProjects(); 
+  const searchFiltered = filterProjects(); // always apply search filter
 
   let visibleProjects = [...searchFiltered];
-  
-  if (selectedIndex !== -1 && tagData[selectedIndex]) {
-    const selectedTag = tagData[selectedIndex].label;
-    visibleProjects = searchFiltered.filter(p => (p.tags || []).includes(selectedTag));
+  if (selectedIndex !== -1) {
+    const rolled = d3.rollups(searchFiltered, v => v.length, d => d.year);
+    const data = rolled.map(([year, count]) => ({ label: year, value: count }));
+    const selectedYear = data[selectedIndex]?.label;
+
+    if (selectedYear) {
+      visibleProjects = searchFiltered.filter(p => p.year === selectedYear);
+    }
   }
 
   const projectsTitle = document.querySelector('.projects-title');
@@ -126,4 +101,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   showProjects();
 });
-
