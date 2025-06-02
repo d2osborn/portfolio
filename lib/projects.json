@@ -3,7 +3,7 @@
     "title": "Home Price Predictor",
     "year": "2025",
     "image": "images/delesign-real-estate-market.svg",
-    "description": "Developed and optimized a statistical modeling on 2.2M+ real estate listings to predict prices. Created a valuation framework comparing listed vs. predicted prices, identifying 10.5% of properties as undervalued.",
+    "description": "Developed and optimized a LightGBM model on 2.2M+ real estate listings to predict prices. Created a valuation framework comparing listed vs. predicted prices, identifying 10.5% of properties as undervalued.",
     "tags": ["Machine Learning", "Data Science"],
     "link": "https://github.com/d2osborn/home-price-evaluator"
   },
@@ -27,7 +27,7 @@
     "title": "PSCL Interactive Dashboard",
     "year": "2023",
     "image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
-    "description": "Developed an interactive Looker Studio dashboard with Pitching—including tables for max and average velocity and spin rate, pie charts for pitch distribution, and bar graphs for pitch outcomes—and Hitting Metrics, such as tables highlighting max exit velocity, average launch angle, and average exit velocity by player and pitch type. This dashboard provided a user-friendly interface for coaches and players to track their performances and showcase their abilities to college scouts.",
+    "description": "Developed an interactive Looker Studio dashboard that provided a user-friendly interface for coaches and players to track their performances and showcase their abilities to college scouts.",
     "tags": ["Data Visualization", "Baseball"],
     "link": "https://github.com/d2osborn/PSCL-Summer-Project"
   },

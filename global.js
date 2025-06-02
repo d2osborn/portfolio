@@ -52,7 +52,9 @@ export function renderProjects(projects, containerElement) {
 
   containerElement.innerHTML = '';
 
-  for (let project of projects) {
+  const visibleProjects = projects.filter(p => !p.title?.startsWith('Project '));
+
+  for (let project of visibleProjects) {
     const card = document.createElement('div');
     card.className = 'project-card';
 

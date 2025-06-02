@@ -95,10 +95,10 @@ nav a.active {
 }
 
 .intro-image img {
-  width: 220px;
-  height: 220px;
+  width: 230px; /* optional: adjust as needed */
+  height: auto; /* keeps original aspect ratio */
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 0; /* removes the circular shape */
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
