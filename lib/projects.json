@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Effect of Two Strikes on a Hitter's Swing",
+    "year": 2025,
+    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "",
+    "tags": ["Data Visualization", "Baseball"],
+    "link": "https://github.com/d2osborn/dsc106-finalproject"
+  },
+  {
     "title": "Home Price Predictor",
     "year": "2025",
     "image": "images/delesign-real-estate-market.svg",
