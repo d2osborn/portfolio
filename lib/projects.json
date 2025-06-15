@@ -8,7 +8,7 @@
     "link": "https://github.com/d2osborn/dsc106-finalproject"
   },
   {
-    "title": "Home Price Predictor",
+    "title": "Hidden Home Price Predictor",
     "year": "2025",
     "image": "images/delesign-real-estate-market.svg",
     "description": "Developed and optimized a LightGBM model on 2.2M+ real estate listings to predict prices. Created a valuation framework comparing listed vs. predicted prices, identifying 10.5% of properties as undervalued.",
@@ -24,7 +24,7 @@
     "link": "https://github.com/d2osborn/Spotify-Popularity-Analyzer"
   },
   {
-    "title": "Power Outages",
+    "title": "Hidden Power Outages",
     "year": "2024",
     "image": "images/delesign-alternative-energy-sources.svg",
     "description": "Performed statistical analysis and predictive modeling on U.S. power outage data (2000–2016) to identify key factors affecting major outages and forecast regional energy consumption to help utility companies improve outage response.",
