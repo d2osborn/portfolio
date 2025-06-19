@@ -58,10 +58,17 @@ export function renderProjects(projects, containerElement) {
     const card = document.createElement('div');
     card.className = 'project-card';
 
+    const isGitHub = project.link?.startsWith('https://github.com');
+    const iconSrc = isGitHub
+      ? 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg'
+      : 'images/world-wide-web-svgrepo-com.svg';
+
     card.innerHTML = `
-      ${project.link ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="project-github">
-      </a>` : ''}
+      ${project.link ? `
+        <a href="${project.link}" target="_blank" rel="noopener noreferrer">
+          <img src="${iconSrc}" alt="${isGitHub ? 'GitHub' : 'Website'}" class="project-github">
+        </a>` : ''
+      }
 
       <div class="project-title">${project.title ?? 'Untitled Project'}</div>
       <div class="project-description">${project.description ?? ''}</div>
