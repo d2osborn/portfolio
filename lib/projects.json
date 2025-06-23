@@ -19,7 +19,7 @@
     "title": "Spotify Popularity Analysis",
     "year": "2025",
     "image": "images/icons8-spotify-96.svg",
-    "description": "Performed EDA on 100,000+ Spotify tracks to identify key audio features linked to song popularity.",
+    "description": "A statistical analysis on 100,000+ Spotify tracks to identify key audio features linked to song popularity.",
     "tags": ["Data Analysis", "Statistical Analysis"],
     "link": "https://drive.google.com/file/d/1FMkOFZF_mu6pi2VC6lzXy53v4j-H88H7/view?usp=sharing"
   },
@@ -35,9 +35,9 @@
     "title": "PSCL Interactive Dashboard",
     "year": "2023",
     "image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
-    "description": "Developed an interactive Looker Studio dashboard that provided a user-friendly interface for coaches and players to track their performances and showcase their abilities to college scouts.",
+    "description": "The interactive Looker Studio dashboard that provides a user-friendly interface for coaches and players to track their performances and showcase their abilities to college scouts for the PSCL.",
     "tags": ["Baseball Analytics", "Data Visualization"],
-    "link": "https://lookerstudio.google.com/u/0/reporting/489badb7-a77f-4fb5-9505-fa4db8bb8d4f/page/MzvTD/edit"
+    "link": "https://lookerstudio.google.com/u/0/reporting/489badb7-a77f-4fb5-9505-fa4db8bb8d4f/page/MzvTD"
   },
   {
     "title": "Project 5",
