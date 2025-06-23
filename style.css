@@ -82,10 +82,10 @@ nav a.active {
 
 /* Introduction Section */
 .intro-section {
-  padding: 6rem 0 5rem 0;  /* top and bottom padding */
+  padding: 6rem 0 5rem 0; 
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* align content near top */
+  align-items: flex-start;
 }
 
 .intro-container {
@@ -98,10 +98,10 @@ nav a.active {
 }
 
 .intro-image img {
-  width: 230px; /* optional: adjust as needed */
-  height: auto; /* keeps original aspect ratio */
+  width: 230px; 
+  height: auto; 
   object-fit: cover;
-  border-radius: 0; /* removes the circular shape */
+  border-radius: 0; 
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
@@ -111,7 +111,7 @@ nav a.active {
 }
 
 .intro-text h1 {
-  font-size: 3.2rem; /* was 2.75rem */
+  font-size: 3.2rem; 
   line-height: 1.3;
   margin-bottom: 1rem;
 }
@@ -124,8 +124,8 @@ nav a.active {
 }
 
 .intro-text p {
-  font-size: 1.1rem; /* was 1rem */
-  line-height: 1.85; /* was 1.7 */
+  font-size: 1.1rem;
+  line-height: 1.85; 
 }
 
 /* Responsive */
@@ -203,7 +203,7 @@ nav a.active {
 }
 
 .experience-section {
-  margin-top: 3rem; /* or adjust if too tight */
+  margin-top: 3rem; 
 }
 
 .entry-card {
@@ -257,7 +257,7 @@ nav a.active {
 }
 
 .download-btn:hover {
-  background-color: #0059c1; /* slightly darker shade of --accent */
+  background-color: #0059c1; 
 }
 
 

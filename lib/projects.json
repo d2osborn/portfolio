@@ -3,7 +3,7 @@
     "title": "The Effect of Two Strikes on a Hitter's Swing",
     "year": 2025,
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "",
+    "description": "An interactive website that uses Baseball Savant's new swing angles—attack angle, attack direction, swing path (tilt)—to explore how hitters are adjusting their swing in two-strike counts, featuring league trends, an in-depth analysis on Yordan Alvarez's 2024 season, and a 3D sandbox to visualize the swing changes of every qualified 2024 hitter.",
     "tags": ["Baseball Analytics", "Data Visualization"],
     "link": "https://d2osborn.github.io/dsc106-finalproject/"
   },
@@ -21,7 +21,7 @@
     "image": "images/icons8-spotify-96.svg",
     "description": "Performed EDA on 100,000+ Spotify tracks to identify key audio features linked to song popularity.",
     "tags": ["Data Analysis", "Statistical Analysis"],
-    "link": "https://github.com/d2osborn/Spotify-Popularity-Analyzer"
+    "link": "https://drive.google.com/file/d/1FMkOFZF_mu6pi2VC6lzXy53v4j-H88H7/view?usp=sharing"
   },
   {
     "title": "Hidden Power Outages",
