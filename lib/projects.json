@@ -1,5 +1,13 @@
 [
   {
+    "title": "Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
+    "year": 2025,
+    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Created Aggression Over Expected (AOE), a first-of-its kind defensive metric that measures how aggressive an outfielder tends to be, relative to their position, using Bayesian Hierarchical logistic models to estimate the player- and positional-level aggressive probabilities that build AOE. Also communicated complex technical concepts to non-technical judges through clear explanations and intuitive visualizations.",
+    "tags": ["Baseball Analytics", "Bayesian Modeling"],
+    "link": "https://github.com/d2osborn/SMTChallenge2025/blob/main/Team15-project%20paper.pdf"
+  },
+  {
     "title": "The Effect of Two Strikes on a Hitter's Swing",
     "year": 2025,
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
