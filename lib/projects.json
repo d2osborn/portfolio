@@ -3,7 +3,7 @@
     "title": "Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
     "year": 2025,
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Used spatial, player- and ball-tracking data to create Aggression Over Expected (AOE), a first-of-its kind defensive metric that measures how aggressive an outfielder is expected to be, relative to their position. The probabilities that build AOE were estimated using Bayesian Hierarchical random effects models. Also communicated complex technical concepts to non-technical judges through clear explanations and intuitive visualizations.",
+    "description": "Used spatial, player-, and ball-tracking data to create Aggression Over Expected (AOE), a first-of-its kind defensive metric that measures how aggressive an outfielder is expected to be, relative to their position. The probabilities that build AOE were estimated using Bayesian Hierarchical Random Effects models. Also communicated complex technical concepts to non-technical judges through clear explanations and intuitive visualizations.",
     "tags": ["Baseball Analytics", "Bayesian Modeling"],
     "link": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
   },
