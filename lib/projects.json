@@ -11,7 +11,7 @@
     "title": "Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
     "year": 2025,
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Used spatial, player-, and ball-tracking data to create Aggression Over Expected (AOE), a first-of-its kind defensive metric that measures how aggressive an outfielder is expected to be, relative to their position. The probabilities that build AOE were estimated using Bayesian Hierarchical Mixed Effects models. Also communicated complex technical concepts to non-technical judges through clear explanations and intuitive visualizations.",
+    "description": "Built a probabilistic defensive baseball metric that quantifies defensive aggression of outfielders from spatial, player-, and ball-tracking data using Bayesian hierarchical modeling. Developed a catch-probability model using a logistic GAM, achieving 0.162 test log-loss and a 95.7% test F1 score. Communicated technical concepts to non-technical judges using clear visuals and intuitive explanations.",
     "tags": ["Baseball Analytics", "Bayesian Modeling"],
     "link": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
   },
@@ -19,7 +19,7 @@
     "title": "The Effect of Two Strikes on a Hitter's Swing",
     "year": 2025,
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "An interactive website that uses Baseball Savant's new swing angles—attack angle, attack direction, swing path (tilt)—to explore how hitters are adjusting their swing in two-strike counts, featuring league trends, an in-depth analysis on Yordan Alvarez's 2024 season, and a 3D sandbox to visualize the swing changes of every qualified 2024 hitter.",
+    "description": "Built an interactive web-based analysis exploring how swinging behavior of batters changes under specific conditions. Included league-level trends, a deep-dive case study, and a 3D visualization sandbox for exploratory analysis.",
     "tags": ["Baseball Analytics", "Data Visualization"],
     "link": "https://d2osborn.github.io/dsc106-finalproject/"
   },
