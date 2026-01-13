@@ -1,15 +1,15 @@
 [
   {
-    "title": "A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers",
-    "year": 2025,
+    "title": "A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers (in development)",
+    "year": "Nov 2025 - Jan 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "",
+    "description": "Developing a Bayesian model to predict season-ahead arm-injury risk for MLB pitchers. Constructed a longitudinal dataset of 6,300 pitcher-seasons by integrating large-scale baseball and injury data sources. Applying partial pooling in a hierarchical framework to improve predictions for pitchers with limited histories",
     "tags": ["Baseball Analytics", "Bayesian Modeling", "Probabilistic Forecasting"],
     "link": ""
   },
   {
     "title": "Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
-    "year": 2025,
+    "year": "Jun 2025 - Aug 2025",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "Built a probabilistic defensive baseball metric that quantifies defensive aggression of outfielders from spatial, player-, and ball-tracking data using Bayesian hierarchical modeling. Developed a catch-probability model using a logistic GAM, achieving 0.162 test log-loss and a 95.7% test F1 score. Communicated technical concepts to non-technical judges using clear visuals and intuitive explanations.",
     "tags": ["Baseball Analytics", "Bayesian Modeling"],
@@ -17,19 +17,19 @@
   },
   {
     "title": "The Effect of Two Strikes on a Hitter's Swing",
-    "year": 2025,
+    "year": "Apr 2025 - May 2025",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "Built an interactive web-based analysis exploring how swinging behavior of batters changes under specific conditions. Included league-level trends, a deep-dive case study, and a 3D visualization sandbox for exploratory analysis.",
     "tags": ["Baseball Analytics", "Data Visualization"],
     "link": "https://d2osborn.github.io/dsc106-finalproject/"
   },
   {
-    "title": "Hidden Home Price Predictor",
-    "year": "2025",
+    "title": "What Is a Home Worth? Large-Scale Ensemble Learning for U.S. Housing Prices",
+    "year": "Mar 2025",
     "image": "images/delesign-real-estate-market.svg",
-    "description": "Developed and optimized a LightGBM model on 2.2M+ real estate listings to predict prices. Created a valuation framework comparing listed vs. predicted prices, identifying 10.5% of properties as undervalued.",
-    "tags": ["Machine Learning", "Data Science"],
-    "link": "https://github.com/d2osborn/home-price-evaluator"
+    "description": "Built a large-scale machine learning pipeline using gradient-boosted trees to predict and assess U.S. housing prices using 2.2M+ listings, incorporating extensive feature engineering, data cleaning, and preprocessing across geospatial, demographic, crime, tax, and market context data; achieved about 0.4 log-RMSE.",
+    "tags": ["Geospatial Data", "Machine Learning"],
+    "link": "https://drive.google.com/file/d/1kA8RaDh4wVLB12m09OHaK57k4GXs4ELb/view?usp=sharing"
   },
   {
     "title": "Spotify Popularity Analysis",
@@ -49,7 +49,7 @@
   },
   {
     "title": "PSCL Interactive Dashboard",
-    "year": "2023",
+    "year": "Jun 2023 - Jul 2023",
     "image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
     "description": "The interactive Looker Studio dashboard that provides a user-friendly interface for coaches and players to track their performances and showcase their abilities to college scouts for the PSCL.",
     "tags": ["Baseball Analytics", "Data Visualization"],
