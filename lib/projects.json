@@ -11,7 +11,7 @@
     "title": "Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
     "year": "Jun 2025 - Aug 2025",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Built a probabilistic defensive baseball metric that quantifies defensive aggression of outfielders from spatial, player-, and ball-tracking data using Bayesian hierarchical modeling. Developed a catch-probability model using a logistic GAM, achieving 0.162 test log-loss and a 95.7% test F1 score. Communicated technical concepts to non-technical judges using clear visuals and intuitive explanations.",
+    "description": "Built a probabilistic defensive baseball metric that quantifies the defensive aggressiveness of outfielders from spatiotemporal tracking data using Bayesian hierarchical modeling. Developed a catch-probability model using a logistic GAM, achieving 0.162 test log-loss and a 95.7% test F1 score. Communicated technical concepts to non-technical judges using clear visuals and intuitive explanations.",
     "tags": ["Baseball Analytics", "Bayesian Modeling"],
     "link": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
   },
