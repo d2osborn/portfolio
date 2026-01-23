@@ -4,7 +4,7 @@
     "year": "Nov 2025 - Jan 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "Developing a Bayesian model to forecast season-ahead arm-injury risk for MLB pitchers. Applied partial pooling in a hierarchical framework to improve predictions for pitchers with limited histories. Constructed a longitudinal dataset of 6,300 pitcher-seasons by integrating large-scale baseball and injury data sources.",
-    "tags": ["Baseball Analytics", "Bayesian Modeling", "Probabilistic Forecasting"],
+    "tags": ["Baseball Analytics", "Bayesian Modeling"],
     "link": ""
   },
   {
@@ -25,7 +25,7 @@
   },
   {
     "title": "What Is a Home Worth? Large-Scale Ensemble Learning for U.S. Housing Prices",
-    "year": "Mar 2025",
+    "year": "Feb 2025 - Mar 2025",
     "image": "images/delesign-real-estate-market.svg",
     "description": "Built a large-scale machine learning pipeline using gradient-boosted trees to predict and assess U.S. housing prices using 2.2M+ listings, incorporating extensive feature engineering, data cleaning, and preprocessing across geospatial, demographic, crime, tax, and market context data; achieved about 0.4 log-RMSE.",
     "tags": ["Geospatial Data", "Machine Learning"],
@@ -40,12 +40,12 @@
     "link": "https://drive.google.com/file/d/1FMkOFZF_mu6pi2VC6lzXy53v4j-H88H7/view?usp=sharing"
   },
   {
-    "title": "Hidden Power Outages",
-    "year": "2024",
+    "title": "Power Outages Statistical Analysis",
+    "year": "May 2024 - Jun 2024",
     "image": "images/delesign-alternative-energy-sources.svg",
-    "description": "Performed statistical analysis and predictive modeling on U.S. power outage data (2000–2016) to identify key factors affecting major outages and forecast regional energy consumption to help utility companies improve outage response.",
-    "tags": ["Machine Learning", "Statistical Analysis", "Data Science"],
-    "link": "https://github.com/d2osborn/Power-Outages"
+    "description": "Developed a Random Forest model to forecast regional energy consumption using geospatial, economic, and climatic data. Conducted permutation tests and NMAR analysis to identify dependencies between electricity sales and peak demand loss.",
+    "tags": ["Machine Learning", "Resource Management"],
+    "link": "https://d2osborn.github.io/PowerOutages/"
   },
   {
     "title": "PSCL Interactive Dashboard",
