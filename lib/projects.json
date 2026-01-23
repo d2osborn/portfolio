@@ -3,7 +3,7 @@
     "title": "A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers (in development)",
     "year": "Nov 2025 - Jan 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Developing a Bayesian model to predict season-ahead arm-injury risk for MLB pitchers. Constructed a longitudinal dataset of 6,300 pitcher-seasons by integrating large-scale baseball and injury data sources. Applying partial pooling in a hierarchical framework to improve predictions for pitchers with limited histories.",
+    "description": "Developing a Bayesian model to forecast season-ahead arm-injury risk for MLB pitchers. Applied partial pooling in a hierarchical framework to improve predictions for pitchers with limited histories. Constructed a longitudinal dataset of 6,300 pitcher-seasons by integrating large-scale baseball and injury data sources.",
     "tags": ["Baseball Analytics", "Bayesian Modeling", "Probabilistic Forecasting"],
     "link": ""
   },
@@ -11,7 +11,7 @@
     "title": "Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
     "year": "Jun 2025 - Aug 2025",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Built a probabilistic defensive baseball metric that quantifies the defensive aggressiveness of outfielders from spatiotemporal tracking data using Bayesian hierarchical modeling. Developed a catch-probability model using a logistic GAM, achieving 0.162 test log-loss and a 95.7% test F1 score. Communicated technical concepts to non-technical judges using clear visuals and intuitive explanations.",
+    "description": "Built a probabilistic defensive baseball metric that quantifies the defensive aggressiveness of outfielders from spatiotemporal tracking data using Bayesian hierarchical modeling. Communicated technical concepts to non-technical judges using clear visuals and intuitive explanations.",
     "tags": ["Baseball Analytics", "Bayesian Modeling"],
     "link": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
   },
