@@ -11,7 +11,7 @@
     "title": "Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
     "year": "Jun 2025 - Aug 2025",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Built a probabilistic defensive baseball metric that quantifies the defensive aggressiveness of outfielders from spatiotemporal tracking data using Bayesian hierarchical modeling. Communicated technical concepts to non-technical judges using clear visuals and intuitive explanations.",
+    "description": "Formulated 'Aggression Over Expected' (AOE) by engineering a Bayesian hierarchical framework that contrasts individual player posteriors against positional counterfactuals, utilizing MCMC sampling and partial pooling to regularize estimates across limited sample sizes. Trained a Logistic Generalized Additive Model (GAM) to quantify catch probability from spatiotemporal tracking data, achieving 0.162 test log-loss and 95.7% test F1. Earned honorable mention recognition as a Top 10 finalist among 50 teams (114 students) in the 2025 SMT Data Challenge.",
     "tags": ["Baseball Analytics", "Bayesian Modeling"],
     "link": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
   },
@@ -19,7 +19,7 @@
     "title": "The Effect of Two Strikes on a Hitter's Swing",
     "year": "Apr 2025 - May 2025",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Built an interactive web-based analysis exploring how swinging behavior of batters changes under specific conditions. Included league-level trends, a deep-dive case study, and a 3D visualization sandbox for exploratory analysis.",
+    "description": "Constructed an interactive dashboard using Python and D3.js to process MLB Statcast tracking data, conducting exploratory analysis on swing mechanic shifts in high-pressure contexts.",
     "tags": ["Baseball Analytics", "Data Visualization"],
     "link": "https://d2osborn.github.io/dsc106-finalproject/"
   },
@@ -27,7 +27,7 @@
     "title": "What Is a Home Worth? Large-Scale Ensemble Learning for U.S. Housing Prices",
     "year": "Feb 2025 - Mar 2025",
     "image": "images/delesign-real-estate-market.svg",
-    "description": "Built a large-scale machine learning pipeline using gradient-boosted trees to predict and assess U.S. housing prices using 2.2M+ listings, incorporating extensive feature engineering, data cleaning, and preprocessing across geospatial, demographic, crime, tax, and market context data; achieved about 0.4 log-RMSE.",
+    "description": "Architected a predictive pricing pipeline for 2.2M+ U.S. properties, synthesizing heterogeneous data sources (crime, tax, demographics) into a gradient-boosting framework to capture complex market drivers.",
     "tags": ["Geospatial Data", "Machine Learning"],
     "link": "https://drive.google.com/file/d/1kA8RaDh4wVLB12m09OHaK57k4GXs4ELb/view?usp=sharing"
   },
@@ -43,7 +43,7 @@
     "title": "Power Outages Statistical Analysis",
     "year": "May 2024 - Jun 2024",
     "image": "images/delesign-alternative-energy-sources.svg",
-    "description": "Developed a Random Forest model to forecast regional energy consumption using geospatial, economic, and climatic data. Conducted permutation tests and NMAR analysis to identify dependencies between electricity sales and peak demand loss.",
+    "description": "Developed a Random Forest regressor to forecast regional energy consumption, utilizing permutation tests and NMAR analysis to quantify statistical dependencies between electricity sales and peak demand loss.",
     "tags": ["Machine Learning", "Resource Management"],
     "link": "https://d2osborn.github.io/PowerOutages/"
   },
