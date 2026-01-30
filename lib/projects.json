@@ -19,7 +19,7 @@
     "title": "The Effect of Two Strikes on a Hitter's Swing",
     "year": "Apr 2025 - May 2025",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Constructed an interactive dashboard using Python and D3.js to process MLB Statcast tracking data, conducting exploratory analysis on swing mechanic shifts in high-pressure contexts.",
+    "description": "Constructed an interactive visual analytics dashboard using Python and D3.js, utilizing 700,000+ Statcast records to identify relationships between deviations in swing mechanics and contact quality in two-strike contexts.",
     "tags": ["Baseball Analytics", "Data Visualization"],
     "link": "https://d2osborn.github.io/dsc106-finalproject/"
   },
