@@ -52,7 +52,7 @@ export function renderProjects(projects, containerElement) {
 
   containerElement.innerHTML = '';
 
-  const visibleProjects = projects.filter(p => !(p.title?.startsWith('Project ') || p.title?.startsWith('Hidden ') || p.title?.startsWith('Spotify')));
+  const visibleProjects = projects.filter(p => !(p.title?.startsWith('Project ') || p.title?.startsWith('Hidden ') || p.title?.startsWith('Spotify') || p.title?.startsWith('(in')));
 
   for (let project of visibleProjects) {
     const card = document.createElement('div');

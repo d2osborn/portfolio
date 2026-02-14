@@ -1,5 +1,13 @@
 [
   {
+    "title": "Sean McVAI: Beating Two-High Coverage",
+    "year": "Feb 2026",
+    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Engineered a Python quantile regression pipeline using gradient boosted trees to forecast expected yardage across 5 distinct percentiles (2.5th to 97.5th), quantifying strategic risk and upside of play designs. Developed an interactive <a href='https://seanmcvai.streamlit.app/' target='_blank'>Streamlit</a> dashboard integrating 2 predictive models, enabling end users to dynamically evaluate custom play designs. Presented to NFL analysts at the 2026 Football Analytics Blitz, competing against 15 teams (~70 students).",
+    "tags": ["Football Analytics", "Interactive Dashboard"],
+    "link": "https://github.com/pranavrajaram/football-analytics-blitz-2026"
+  },
+  {
     "title": "(in dev) A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers",
     "year": "Dec 2025 - ",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
@@ -11,7 +19,7 @@
     "title": "Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
     "year": "Jun 2025 - Aug 2025",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Formulated a defensive baseball metric using a Bayesian hierarchical framework to estimate latent aggression rates, leveraging partial pooling to stabilize posteriors for ~90% of outfielders with limited observations. Trained a Logistic GAM to quantify catch probability from spatiotemporal tracking data, achieving 0.162 test log-loss and 95.7% test F1. Earned honorable mention recognition as a Top 10 finalist among 50 teams (114 students) in the 2025 SMT Data Challenge.",
+    "description": "Implemented a Bayesian hierarchical framework in PyMC to formulate a defensive baseball metric, estimating latent aggression rates and leveraging partial pooling to stabilize posteriors for ~90% of outfielders from spatiotemporal tracking data. Earned honorable mention recognition as a Top 10 finalist among 50 teams (114 students) in the 2025 SMT Data Challenge.",
     "tags": ["Baseball Analytics", "Bayesian Modeling"],
     "link": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
   },
@@ -19,8 +27,8 @@
     "title": "The Effect of Two Strikes on a Hitter's Swing",
     "year": "Apr 2025 - May 2025",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Constructed an interactive dashboard using Python and D3.js, utilizing 700,000+ MLB Statcast records, to identify and analyze relationships between deviations in swing mechanics and offensive outcomes in high-pressure contexts.",
-    "tags": ["Baseball Analytics", "Data Visualization"],
+    "description": "Created an interactive website using Pythonand D3.js, utilizing 700,000+ MLB Statcast records, to analyze relationships between deviations in swing mechanics and offensive outcomes in high-pressure contexts.",
+    "tags": ["Baseball Analytics", "Data Visualization", "Interactive Dashboard"],
     "link": "https://d2osborn.github.io/dsc106-finalproject/"
   },
   {
