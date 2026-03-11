@@ -20,23 +20,38 @@ async function showProjectsAndGithub() {
   }
 }
 
+// --- Navigation Highlight Observer ---
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
-window.addEventListener("scroll", () => {
-  const fromTop = window.scrollY + 150;
+const observerOptions = {
+  root: null,
+  rootMargin: "-40% 0px -60% 0px", 
+  threshold: 0
+};
 
-  sections.forEach((section) => {
-    const id = section.getAttribute("id");
-    const link = document.querySelector(`nav a[href="#${id}"]`);
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
-      navLinks.forEach((l) => l.classList.remove("active"));
-      if (link) link.classList.add("active");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // 1. Remove active class from all links
+      navLinks.forEach((link) => link.classList.remove("active"));
+      
+      // 2. Find the ID of the section currently in view
+      const currentId = entry.target.getAttribute("id");
+      
+      // 3. Find the matching link and add the active class
+      const activeLink = document.querySelector(`nav a[href="#${currentId}"]`);
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
     }
   });
+}, observerOptions);
+
+// Tell the observer to watch every section on the page
+sections.forEach((section) => {
+  observer.observe(section);
 });
 
+// --- Initialize Data Fetching ---
 showProjectsAndGithub();

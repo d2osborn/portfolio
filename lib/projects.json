@@ -1,35 +1,55 @@
 [
   {
+    "title": "Hidden A Bayesian Spatial Analysis of the 2023 MLB Infield Shift Restrictions",
+    "year": "Mar 2026",
+    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Presented to MLB analysts at the 2026 OSU/SIS Hackathon against # teams (~# students).",
+    "tags": ["Baseball Analytics", "Bayesian Modeling", "Probablistic Forecasts"],
+    "github": "https://github.com/d2osborn/OSUHackathon2026"
+  },
+  {
+    "title": "Hidden A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers",
+    "year": "Dec 2025 - Mar 2026",
+    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Developed a Bayesian hierarchical model in PyMC to forecast the latent arm-injury risk and burden for # MLB pitchers. Created an interactive dashboard to visualize player uncertainty estimates.",
+    "tags": ["Baseball Analytics", "Bayesian Modeling", "Probablistic Forecasts"],
+    "github": "https://github.com/SatrunsDream/Workload-effect-on-pitcher-injury",
+    "paper": "https://link-to-your-pdf.com/paper.pdf"
+  },
+  {
+    "title": "Hidden A Bayesian Framework for Modeling True Hitting Talent",
+    "year": "Feb 2026 - Mar 2026",
+    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Architected a probabilistic projection system for MLB hitters, utilizing a Hierarchical Bayesian framework and Gaussian Processes in NumPyro to forecast offensive performance, improving projection accuracy by #% over baseline.",
+    "github": "https://github.com/d2osborn/probabilistic_projection_project",
+    "paper": "https://link-to-your-pdf.com/paper.pdf"
+  },
+  {
     "title": "Sean McVAI: Beating Two-High Coverage",
     "year": "Feb 2026",
-    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Engineered a Python quantile regression pipeline using gradient boosted trees to forecast expected yardage across 5 distinct percentiles (2.5th to 97.5th), quantifying strategic risk and upside of play designs. Developed an interactive <a href='https://seanmcvai.streamlit.app/' target='_blank'>Streamlit</a> dashboard integrating 2 predictive models, enabling end users to dynamically evaluate custom play designs. Presented to NFL analysts at the 2026 Football Analytics Blitz, competing against 15 teams (~70 students).",
+    "image":  "images/mcvai.svg",
+    "description": "Quantified the strategic risk and upside of offensive play designs by forecasting expected yardage gained with gradient boosted trees. Developed an interactive Streamlit dashboard integrating 2 predictive models for play design evaluation, presenting the tool to NFL analysts at the 2026 Football Analytics Blitz against 15 teams (~70 students).",
     "tags": ["Football Analytics", "Interactive Dashboard"],
-    "link": "https://github.com/pranavrajaram/football-analytics-blitz-2026"
+    "github": "https://github.com/pranavrajaram/football-analytics-blitz-2026",
+    "url": "https://seanmcvai.streamlit.app/"
   },
   {
-    "title": "(in dev) A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers",
-    "year": "Dec 2025 - ",
-    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Developing a Bayesian model to forecast season-ahead arm-injury risk for MLB pitchers. Applied partial pooling in a hierarchical framework to improve predictions for pitchers with limited histories. Constructed a longitudinal dataset of 6,300 pitcher-seasons by integrating large-scale baseball and injury data sources.",
-    "tags": ["Baseball Analytics", "Bayesian Modeling"],
-    "link": ""
-  },
-  {
-    "title": "Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
+    "title": "Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
     "year": "Jun 2025 - Aug 2025",
-    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Implemented a Bayesian hierarchical framework in PyMC to formulate a defensive baseball metric, estimating latent aggression rates and leveraging partial pooling to stabilize posteriors for ~90% of outfielders from spatiotemporal tracking data. Earned honorable mention recognition as a Top 10 finalist among 50 teams (114 students) in the 2025 SMT Data Challenge.",
+    "image":  "images/aoe_paper.svg",
+    "description": "Implemented a hierarchical Bayesian framework in PyMC to formulate a defensive baseball metric, estimating latent aggression rates from spatiotemporal tracking data. Earned honorable mention recognition as a Top 10 finalist among 50 teams (114 students) in the 2025 SMT Data Challenge.",
     "tags": ["Baseball Analytics", "Bayesian Modeling"],
-    "link": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
+    "github": "https://github.com/d2osborn/SMTChallenge2025",
+    "paper": "papers/SMT Challenge 2025 Paper.pdf"
   },
   {
     "title": "The Effect of Two Strikes on a Hitter's Swing",
     "year": "Apr 2025 - May 2025",
-    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Created an interactive website using Pythonand D3.js, utilizing 700,000+ MLB Statcast records, to analyze relationships between deviations in swing mechanics and offensive outcomes in high-pressure contexts.",
+    "image":  "images/two_strikes.svg",
+    "description": "Created an interactive website using Python and D3.js, utilizing 700,000+ MLB Statcast records, to analyze relationships between deviations in swing mechanics and offensive outcomes in high-pressure contexts.",
     "tags": ["Baseball Analytics", "Data Visualization", "Interactive Dashboard"],
-    "link": "https://d2osborn.github.io/dsc106-finalproject/"
+    "github": "https://github.com/d2osborn/dsc106-finalproject",
+    "url": "https://d2osborn.github.io/dsc106-finalproject/"
   },
   {
     "title": "What Is a Home Worth? Large-Scale Ensemble Learning for U.S. Housing Prices",
@@ -37,15 +57,17 @@
     "image": "images/delesign-real-estate-market.svg",
     "description": "Architected a predictive pricing pipeline for 2.2M+ U.S. properties, synthesizing heterogeneous data sources (crime, tax, demographics) into a gradient-boosting framework to capture complex market drivers.",
     "tags": ["Geospatial Data", "Machine Learning"],
-    "link": "https://drive.google.com/file/d/1kA8RaDh4wVLB12m09OHaK57k4GXs4ELb/view?usp=sharing"
+    "github": "https://github.com/SatrunsDream/DSC148-Project",
+    "paper": "papers/house_price_project.pdf"
   },
   {
-    "title": "Spotify Popularity Analysis",
+    "title": "Hidden Spotify Popularity Analysis",
     "year": "2025",
     "image": "images/icons8-spotify-96.svg",
     "description": "A statistical analysis on 100,000+ Spotify tracks to identify key audio features linked to song popularity.",
     "tags": ["Data Analysis", "Statistical Analysis"],
-    "link": "https://drive.google.com/file/d/1FMkOFZF_mu6pi2VC6lzXy53v4j-H88H7/view?usp=sharing"
+    "github": "https://github.com/YooNice100/math189proj",
+    "paper": "https://drive.google.com/file/d/1FMkOFZF_mu6pi2VC6lzXy53v4j-H88H7/view?usp=sharing"
   },
   {
     "title": "Power Outages Statistical Analysis",
@@ -53,78 +75,15 @@
     "image": "images/delesign-alternative-energy-sources.svg",
     "description": "Developed a Random Forest regressor to forecast regional energy consumption, utilizing permutation tests and NMAR analysis to quantify statistical dependencies between electricity sales and peak demand loss.",
     "tags": ["Machine Learning", "Resource Management"],
-    "link": "https://d2osborn.github.io/PowerOutages/"
+    "github": "https://github.com/d2osborn/PowerOutages",
+    "url": "https://d2osborn.github.io/PowerOutages/"
   },
   {
-    "title": "PSCL Interactive Dashboard",
+    "title": "Hidden PSCL Interactive Dashboard",
     "year": "Jun 2023 - Jul 2023",
-    "image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
+    "image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
     "description": "The interactive Looker Studio dashboard that provides a user-friendly interface for coaches and players to track their performances and showcase their abilities to college scouts for the PSCL.",
     "tags": ["Baseball Analytics", "Data Visualization"],
-    "link": "https://lookerstudio.google.com/u/0/reporting/489badb7-a77f-4fb5-9505-fa4db8bb8d4f/page/MzvTD"
-  },
-  {
-    "title": "Project 5",
-    "year": "2024",
-    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Placeholder description for Project 1.",
-    "tags": ["Placeholder"],
-    "link": "#"
-  },
-  {
-    "title": "Project 6",
-    "year": "2024",
-    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Placeholder description for Project 2.",
-    "tags": ["Placeholder"],
-    "link": "#"
-  },
-  {
-    "title": "Project 7",
-    "year": "2025",
-    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Placeholder description for Project 1.",
-    "tags": ["Placeholder"],
-    "link": "#"
-  },
-  {
-    "title": "Project 8",
-    "year": "2025",
-    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Placeholder description for Project 2.",
-    "tags": ["Placeholder"],
-    "link": "#"
-  },
-  {
-    "title": "Project 9",
-    "year": "2025",
-    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Placeholder description for Project 1.",
-    "tags": ["Placeholder"],
-    "link": "#"
-  },
-  {
-    "title": "Project 10",
-    "year": "2026",
-    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Placeholder description for Project 2.",
-    "tags": ["Placeholder"],
-    "link": "#"
-  },
-  {
-    "title": "Project 11",
-    "year": "2022",
-    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Placeholder description for Project 1.",
-    "tags": ["Placeholder"],
-    "link": "#"
-  },
-  {
-    "title": "Project 12",
-    "year": "2025",
-    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Placeholder description for Project 2.",
-    "tags": ["Placeholder"],
-    "link": "#"
+    "url": "https://lookerstudio.google.com/u/0/reporting/489badb7-a77f-4fb5-9505-fa4db8bb8d4f/page/MzvTD"
   }
 ]

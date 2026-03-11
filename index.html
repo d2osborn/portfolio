@@ -8,39 +8,39 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#introduction">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#awards">Awards</a></li>
-      <!-- <li><a href="#certifications">Certifications</a></li> -->
-      <li><a href="#contacts">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Content -->
   <main>
+    
+    <header class="site-header">
+      <h1>Diego Osborn</h1>
+      <p class="subtitle">Data Science at UC San Diego</p>
+      <!-- <p class="subtitle">Jr. Quantitative Analyst for the Los Angeles Dodgers -->
+</p>
+      
+    </header>
 
-    <!-- Introduction Section -->
+    <nav>
+      <ul>
+        <li><a href="#introduction">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+
     <section id="introduction" class="intro-section">
-      <div class="intro-container">
-        <div class="intro-image">
-          <img src="images/pfp.png" alt="Diego Osborn headshot" />
-        </div>
-        <div class="intro-text">
-          <h1>Hey, I'm <span class="highlight">Diego Osborn</span></h1>
-          <p>
-            I am a fourth year undergraduate student studying Data Science at UC San Diego with minors in Economics and Mathematics. 
-            I am currently a Data Science Intern for UC San Diego's baseball team (Winter 2023 - Present).
-            Previously, I have spent internships with UC San Diego's Career Center as a Data Analytics Intern (Fall 2024 - Spring 2025), 
-            and as a Summer Data Analytics Intern for Palm Springs Power Baseball (Summer 2023).
-            My strengths lie in machine learning, statistical modeling, and probabilistic reasoning.
-            I'm interested in any opportunities in data science/data analytics, so please feel free to reach out to me via my contact page!
-          </p>
-        </div>
+      <div class="intro-text">
+        <p>
+          <!-- I am currently a junior quantitative analyst for the Los Angeles Dodgers.
+          I recently received my B.S. in Data Science at UC San Diego, where I spent time working as a data science intern for UC San Diego's baseball team. -->
+          I am currently a fourth-year Data Science student at UC San Diego. 
+          I currently work as a data science intern for UC San Diego's baseball team.
+          I previously worked as a data analytics intern for the UC San Diego Career Center and the Palm Springs Power.
+        </p>
+        <p>
+          I'm interested in data science, probabilistic modeling, and baseball. Feel free to reach out to me via my contact page!
+        </p>
       </div>
     </section>
 
@@ -48,18 +48,31 @@
     <section id="education">
       <h2>Education</h2>
 
+      <!-- <article class="entry">
+        <div class="entry-card">
+          <h4 class="entry-header">
+            <span>University of California, Santa Cruz</span>
+            <span>M.S. Statistics</span>
+            <span class="entry-dates">Sep 2027 - Jun 2029</span>
+          </h4>
+          <p>
+          </p>
+        </div>
+      </article> -->
+
       <article class="entry">
         <div class="entry-card">
           <h4 class="entry-header">
             <span>University of California, San Diego</span>
-            <span class="entry-dates">Sep 2022 – Jun 2026</span>
+            <span>B.S. Data Science</span>
+            <span class="entry-dates">Sep 2022 - Jun 2026</span>
+            <!-- <span class="entry-dates">Sep 2022 - Jun 2026</span> -->
           </h4>
           <p>
-            B.S. Data Science; Minors in Economics and Mathematics<br><br> <!--; GPA: 3.3/4.0<br><br-->
-            Organizations: Triton Ball Sports Analytics Club, Data Science Student Society<br><br>
-            Honors: Eleanor Roosevelt College Honors Program, <em>Provost Honors</em> (4x)<br><br>
-            Graduate Coursework (cross enrollment): Bayesian Inference, Hierarchical & Probabilistic Modeling<br><br>
-            Relevant Coursework: Principles & Techniques of Data Science, Monte Carlo Methods, Relational Databases, Cloud Computing, Scalable ML<br><br>
+            Organizations: Triton Ball Sports Analytics Club, Data Science Student Society<br>
+            Graduate Coursework (cross enrollment): Bayesian Inference, Hierarchical & Probabilistic Modeling<br>
+            Relevant Coursework: Principles & Techniques of Data Science, Stochastic Processes, Relational Databases, Cloud Computing, Scalable ML<br>
+            Honors: Eleanor Roosevelt College Honors Program, <em>Provost Honors</em> (4x)<br>
           </p>
         </div>
       </article>
@@ -69,6 +82,18 @@
     <section id="experience" class="experience-section">
       <h2>Experience</h2>
 
+      <!-- <article class="entry">
+        <div class="entry-card">
+          <h4 class="entry-header">
+            <span>Los Angeles Dodgers - <em>Jr. Quantitative Analyst</em></span>
+            <span class="entry-dates">Jun 2026 - Present</span>
+          </h4>
+          <p>
+
+          </p>
+        </div>
+      </article> -->
+
       <article class="entry">
         <div class="entry-card">
           <h4 class="entry-header">
@@ -76,15 +101,20 @@
             <span class="entry-dates">Feb 2023 - Present</span>
           </h4>
             <p>
-              Automated the end-to-end generation of opponent scouting reports using Python, reducing weekly preparation time by 90% to streamline pre-game strategy.<br><br>
-              Designed a semi-supervised pipeline using Expectation-Maximization and Gaussian Mixture Models to resolve pitch label noise, and gradient-boosted trees for robust pitch classification.<br></br>
-              Developed a Stuff+ framework to quantify pitch ``nastiness'' using gradient boosted trees on pitch-tracking features for use in scouting and player development.<br></br>
-              <!-- Implemented a conditional gradient-boosting ensemble to quantify Stuff+ (pitch quality), using probability weighting to isolate the intrinsic signal from stochastic environmental noise.<br><br> -->
-              Developed a Monte Carlo simulation running 10,000+ iterations on 3 years of historical data to forecast expected win ranges across varying schedule scenarios to support strategic planning.<br><br>
-              Engineered a Python data ingestion pipeline to migrate 1.5M+ rows (1.7GB) of raw TrackMan CSVs into Google Cloud Storage and BigQuery, establishing the team's first centralized cloud data warehouse.<br></br>
-              Authored technical SOPs to streamline database access and workspace setup, standardizing BigQuery workflows for a 10-person analytics team.<br></br>
+              Responsible for designing, planning, and executing a combination of machine learning methods and statistical modeling to support the evaluation and development of baseball players. 
+              <!-- Apply techniques such as Bayesian hierarchical models, gradient boosting, and generalized additive models.  -->
+              Apply techniques such as gradient boosting, and generalized additive models. 
+              Work with coaching staff to communicate results through presentations and written reports that translate analytical findings into practical applications.
+              Led the engineering of a centralized BigQuery database, and develop technical SOPs that standardize data access for a 10-person analytics group.
+              Work closely with the broader analytics group to share research, code, and ideas that strengthen overall analytical workflows.
+              <!-- Designed and implemented Bayesian hierarchical models leveraging NCAA pitch-level and batted-ball tracking data to project true-talent player performance, improving projection accuracy by #% over baseline.<br></br>
+              Automated the end-to-end generation of opponent scouting reports using Python, reducing weekly preparation time by 90% to streamline pre-game strategy.<br></br>
+              Designed a semi-supervised pipeline using expectation-maximization and gaussian mixture models to resolve pitch label noise, and gradient boosted trees for robust pitch classification.<br></br>
+              Developed a Stuff+ framework to quantify pitch "nastiness" using gradient boosted trees on pitch-tracking features for use in scouting and player development.<br></br>
+              Forecasted expected win ranges across varying schedule scenarios using Monte Carlo simulations to support strategic planning.<br></br>
+              Engineered a Python data pipeline to establish a centralized BigQuery cloud warehouse for 2M+ TrackMan records, and authored technical SOPs to standardize database access and workflows for a 10-person analytics team.<br></br>
               Designed automated post-game visualization reports to track velocity, movement profiles, and location heatmaps, streamlining post-game analysis for coaches and players.<br></br>
-              Contributed to the 2023 Big West Conference Championship title through support for analytics operations and ad hoc scouting analysis.
+              Contributed to the 2023 Big West Conference Championship title through support for analytics operations and ad hoc scouting analysis. --> 
             </p>
         </div>
       </article>
@@ -96,9 +126,9 @@
             <span class="entry-dates">Sep 2024 - Jun 2025</span>
           </h4>
           <p>
-            Developed a reproducible Python ETL workflow integrating 2,000+ Qualtrics survey responses with LinkedIn data for 12,000+ graduates, establishing a single source of truth for reporting.<br><br>
-            Authored technical SOPs for version control and environment management, defining Git protocols to reduce code conflicts and standardize development for a 4-person analytics team.<br><br>
-            Migrated 100,000+ student career Handshake profiles into a local PostgreSQL database, using SQL to ensure compliance with university data retention policies and to deliver actionable datasets.
+            Designed and implemented a reproducible Python ETL pipeline integrating survey and LinkedIn data for more than 12,000 graduates into a centralized dataset, while developing Git SOPs to standardize version control practices for a four-person analytics team. 
+            Managed the migration of over 100,000 student career profiles from Handshake into a local PostgreSQL database, using SQL to support university data retention compliance and produce analysis-ready datasets.
+          </p>
         </div>
       </article>
 
@@ -109,8 +139,7 @@
             <span class="entry-dates">Jun 2023 - Jul 2023</span>
           </h4>
           <p>
-            Oversaw data integrity and validation across 100+ league games, maintaining the central repository to ensure accurate reporting for the official league website.<br></br>
-            Deployed an interactive Looker Studio dashboard to visualize 10+ KPIs from 7,400+ tracked pitch events, transforming raw data into actionable insights for 11 coaches and 260+ players.
+            Oversaw data validation for more than 100 league games supporting the official website and developed an interactive Looker Studio dashboard to visualize pitch-event KPIs used by 11 coaches and over 260 players.
           </p>
         </div>
       </article>
@@ -118,7 +147,7 @@
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Selected Projects</h2>
       <div class="projects"></div>
     </section>
 
@@ -133,7 +162,7 @@
           </h4>
           <p>
             <i>Issued by SportsMEDIA Technology (SMT)</i><br></br>
-            Recognized among top participants (out of 50 teams and 114 students) for my innovative, baseball, player-tracking, quantitative analysis project, <em>Quantifying Defensive Aggression With a Bayesian Hierarchical Model</em>, in an international sports analytics competition.
+            Recognized among top participants (out of 50 teams and 114 students) for my innovative, baseball, player-tracking, quantitative analysis project, <em>Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model</em>, in an international sports analytics competition.
           </p>
         </div>
       </article>
@@ -184,11 +213,11 @@
       </article>
     </section> -->
 
-    <div class="resume-download">
+    <!-- <div class="resume-download">
       <a href="resume/Osborn_Diego_DS_Resume.pdf" target="_blank" rel="noopener noreferrer" class="download-btn">
         Download Resume Here
       </a>
-    </div>
+    </div> -->
 
     <!-- Footer / Contacts Section -->
     <section id="contacts"></section>
@@ -197,24 +226,25 @@
   <footer class="footer-bar">
     <div class="footer-item">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email icon" class="footer-icon">
-      <span>Personal:</span>
-      <a href="mailto:diegoisaacosborn@gmail.com">diegoisaacosborn@gmail.com</a>
+      <a href="mailto:diegoisaacosborn@gmail.com">Personal Email</a>
     </div>
     <div class="footer-item">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email icon" class="footer-icon">
-      <span>School:</span>
-      <a href="mailto:d2osborn@ucsd.edu">d2osborn@ucsd.edu</a>
+      <a href="mailto:d2osborn@ucsd.edu">School Email</a>
     </div>
     <div class="footer-item">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn icon" class="footer-icon">
-      <a href="https://linkedin.com/in/diego-osborn" target="_blank">linkedin.com/in/diego-osborn</a>
+      <a href="https://linkedin.com/in/diego-osborn" target="_blank">LinkedIn</a>
     </div>
     <div class="footer-item">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub icon" class="footer-icon">
-      <a href="https://github.com/d2osborn" target="_blank">github.com/d2osborn</a>
+      <a href="https://github.com/d2osborn" target="_blank">GitHub</a>
+    </div>
+    <div class="footer-item">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter icon" class="footer-icon">
+      <a href="https://x.com/diegosborn" target="_blank">Twitter</a>
     </div>
   </footer>
-
 
   <script type="module" src="index.js"></script>
 </body>
