@@ -1,6 +1,6 @@
 [
   {
-    "title": "Hidden A Bayesian Spatial Analysis of the 2023 MLB Infield Shift Restrictions",
+    "title": "Hidden A Bayesian Spatial Analysis of the 2023 Major League Baseball Infield Shift Restrictions",
     "year": "Mar 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "Presented to MLB analysts at the 2026 OSU/SIS Hackathon against # teams (~# students).",
@@ -17,7 +17,7 @@
     "paper": "https://link-to-your-pdf.com/paper.pdf"
   },
   {
-    "title": "Hidden A Bayesian Framework for Modeling True Hitting Talent",
+    "title": "Hidden Probabilistic Modeling of True Hitting Talent in Major League Baseball",
     "year": "Feb 2026 - Mar 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "Architected a probabilistic projection system for MLB hitters, utilizing a Hierarchical Bayesian framework and Gaussian Processes in NumPyro to forecast offensive performance, improving projection accuracy by #% over baseline.",
@@ -52,7 +52,7 @@
     "url": "https://d2osborn.github.io/dsc106-finalproject/"
   },
   {
-    "title": "What Is a Home Worth? Large-Scale Ensemble Learning for U.S. Housing Prices",
+    "title": "Hidden What Is a Home Worth? Large-Scale Ensemble Learning for U.S. Housing Prices",
     "year": "Feb 2025 - Mar 2025",
     "image": "images/delesign-real-estate-market.svg",
     "description": "Architected a predictive pricing pipeline for 2.2M+ U.S. properties, synthesizing heterogeneous data sources (crime, tax, demographics) into a gradient-boosting framework to capture complex market drivers.",
@@ -70,7 +70,7 @@
     "paper": "https://drive.google.com/file/d/1FMkOFZF_mu6pi2VC6lzXy53v4j-H88H7/view?usp=sharing"
   },
   {
-    "title": "Power Outages Statistical Analysis",
+    "title": "Hidden Power Outages Statistical Analysis",
     "year": "May 2024 - Jun 2024",
     "image": "images/delesign-alternative-energy-sources.svg",
     "description": "Developed a Random Forest regressor to forecast regional energy consumption, utilizing permutation tests and NMAR analysis to quantify statistical dependencies between electricity sales and peak demand loss.",
