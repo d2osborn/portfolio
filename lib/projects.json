@@ -17,11 +17,12 @@
     "paper": "https://link-to-your-pdf.com/paper.pdf"
   },
   {
-    "title": "Hidden Probabilistic Modeling of True Hitting Talent in Major League Baseball",
+    "title": "Probabilistic Modeling of True Hitting Talent in Major League Baseball",
     "year": "Feb 2026 - Mar 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Architected a probabilistic projection system for MLB hitters, utilizing a Hierarchical Bayesian framework and Gaussian Processes in NumPyro to forecast offensive performance, improving projection accuracy by #% over baseline.",
+    "description": "Architected a probabilistic forecasting model utilizing a hierarchical Bayesian framework and Gaussian processes in NumPyro to project true-talent home run rates, improving out-of-sample prediction accuracy by over 31% against benchmark models. Developed a Streamlit dashboard to visualize home-run projections for 2026, providing a user-friendly interface for player-level HR distributions and uncertainty intervals.",
     "github": "https://github.com/d2osborn/probabilistic_projection_project",
+    "url": "https://bayesian-proj-hrs-2026.streamlit.app/",
     "paper": "https://link-to-your-pdf.com/paper.pdf"
   },
   {
