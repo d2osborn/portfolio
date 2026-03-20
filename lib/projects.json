@@ -6,7 +6,7 @@
     "description": "Architected an infield out-probability model using Bayesian Additive Regression Trees in PyMC, achieving a test ROC-AUC of 0.86. Quantified the spatial impact of the 2023 MLB shift ban by mapping the decay in out-probabilities across the infield to formulate a shift-adjusted defensive range metric.",
     "tags": ["Baseball Analytics", "Bayesian Modeling", "Probablistic Forecasts"],
     "github": "https://github.com/d2osborn/OSUHackathon2026",
-    "url": "https://drive.google.com/file/d/1OQ0xCjdN1KOG8zlJckhs-wizpFIYfsoy/view"
+    "slides": "https://drive.google.com/file/d/1OQ0xCjdN1KOG8zlJckhs-wizpFIYfsoy/view"
   },
   {
     "title": "Hidden A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers",
@@ -24,7 +24,8 @@
     "description": "Architected a probabilistic forecasting model utilizing a hierarchical Bayesian framework and Gaussian processes in NumPyro to project true-talent home run rates, improving out-of-sample prediction accuracy by over 31% against benchmark models. Developed a Streamlit dashboard to visualize home-run projections for 2026, providing a user-friendly interface for player-level HR distributions and uncertainty intervals.",
     "github": "https://github.com/d2osborn/probabilistic_projection_project",
     "url": "https://bayesian-proj-hrs-2026.streamlit.app/",
-    "paper": "https://drive.google.com/file/d/1T8KniOVgci-JsFqesSmtvree7ZQY2gpg/view?usp=sharing"
+    "paper": "https://drive.google.com/file/d/1T8KniOVgci-JsFqesSmtvree7ZQY2gpg/view?usp=sharing",
+    "slides": "https://drive.google.com/file/d/1uEOu8YSM27lBwKE8afwv7OuEImySA65B/view?usp=sharing"
   },
   {
     "title": "Sean McVAI: Beating Two-High Coverage",
@@ -33,7 +34,8 @@
     "description": "Quantified the strategic risk and upside of offensive play designs by forecasting expected yardage gained with gradient boosted trees. Developed an interactive Streamlit dashboard integrating 2 predictive models for play design evaluation, presenting the tool to NFL analysts at the 2026 Football Analytics Blitz against 15 teams (~70 students).",
     "tags": ["Football Analytics", "Interactive Dashboard"],
     "github": "https://github.com/pranavrajaram/football-analytics-blitz-2026",
-    "url": "https://seanmcvai.streamlit.app/"
+    "url": "https://seanmcvai.streamlit.app/",
+    "slides": "https://drive.google.com/file/d/1rXEVCKfvD5GqhqaD8-Yc5gT5VpQ2Ai-D/view?usp=sharing"
   },
   {
     "title": "Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
