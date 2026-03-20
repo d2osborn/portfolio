@@ -1,11 +1,12 @@
 [
   {
-    "title": "Hidden A Bayesian Spatial Analysis of the 2023 Major League Baseball Infield Shift Restrictions",
+    "title": "Unshifting the Infield: Spatial Out-Probabilities in the Post-Shift Era",
     "year": "Mar 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Presented to MLB analysts at the 2026 OSU/SIS Hackathon against # teams (~# students).",
+    "description": "Architected an infield out-probability model using Bayesian Additive Regression Trees in PyMC, achieving a test ROC-AUC of 0.86. Quantified the spatial impact of the 2023 MLB shift ban by mapping the decay in out-probabilities across the infield to formulate a shift-adjusted defensive range metric.",
     "tags": ["Baseball Analytics", "Bayesian Modeling", "Probablistic Forecasts"],
-    "github": "https://github.com/d2osborn/OSUHackathon2026"
+    "github": "https://github.com/d2osborn/OSUHackathon2026",
+    "url": "https://drive.google.com/file/d/1OQ0xCjdN1KOG8zlJckhs-wizpFIYfsoy/view"
   },
   {
     "title": "Hidden A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers",
