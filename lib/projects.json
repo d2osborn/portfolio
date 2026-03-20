@@ -24,7 +24,7 @@
     "description": "Architected a probabilistic forecasting model utilizing a hierarchical Bayesian framework and Gaussian processes in NumPyro to project true-talent home run rates, improving out-of-sample prediction accuracy by over 31% against benchmark models. Developed a Streamlit dashboard to visualize home-run projections for 2026, providing a user-friendly interface for player-level HR distributions and uncertainty intervals.",
     "github": "https://github.com/d2osborn/probabilistic_projection_project",
     "url": "https://bayesian-proj-hrs-2026.streamlit.app/",
-    "paper": "https://link-to-your-pdf.com/paper.pdf"
+    "paper": "https://drive.google.com/file/d/1T8KniOVgci-JsFqesSmtvree7ZQY2gpg/view?usp=sharing"
   },
   {
     "title": "Sean McVAI: Beating Two-High Coverage",
