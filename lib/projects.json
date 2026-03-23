@@ -5,8 +5,7 @@
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "Architected an infield out-probability model using Bayesian Additive Regression Trees in PyMC, achieving a held-out ROC-AUC score of 0.86. Quantified the spatial impact of the 2023 MLB shift ban by mapping the decay in out-probabilities across the infield to formulate a shift-adjusted defensive range metric.",
     "tags": ["Baseball Analytics", "Bayesian Modeling", "Probablistic Forecasts"],
-    "github": "https://github.com/d2osborn/OSUHackathon2026",
-    "slides": "https://drive.google.com/file/d/1OQ0xCjdN1KOG8zlJckhs-wizpFIYfsoy/view"
+    "github": "https://github.com/d2osborn/OSUHackathon2026"
   },
   {
     "title": "Hidden A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers",
