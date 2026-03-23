@@ -3,7 +3,7 @@
     "title": "Unshifting the Infield: Spatial Out-Probabilities in the Post-Shift Era",
     "year": "Mar 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Leveraged Bayesian Additive Regression Trees in PyMC (0.86 held-out ROC-AUC) to model infield out-probabilities, mapping the spatial decay of the 2023 MLB shift ban to create a shift-adjusted defensive range metric.",
+    "description": "Leveraged Bayesian Additive Regression Trees in PyMC to model infield out-probabilities (0.86 held-out ROC-AUC), mapping the spatial impact of the 2023 MLB shift ban, and creating a shift-adjusted defensive range metric.",
     "tags": ["Baseball Analytics", "Bayesian Modeling", "Probablistic Forecasts"],
     "github": "https://github.com/d2osborn/OSUHackathon2026"
   },
