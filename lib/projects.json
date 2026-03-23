@@ -3,7 +3,7 @@
     "title": "Unshifting the Infield: Spatial Out-Probabilities in the Post-Shift Era",
     "year": "Mar 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Architected an infield out-probability model using Bayesian Additive Regression Trees in PyMC, achieving a test ROC-AUC of 0.86. Quantified the spatial impact of the 2023 MLB shift ban by mapping the decay in out-probabilities across the infield to formulate a shift-adjusted defensive range metric.",
+    "description": "Architected an infield out-probability model using Bayesian Additive Regression Trees in PyMC, achieving a held-out ROC-AUC score of 0.86. Quantified the spatial impact of the 2023 MLB shift ban by mapping the decay in out-probabilities across the infield to formulate a shift-adjusted defensive range metric.",
     "tags": ["Baseball Analytics", "Bayesian Modeling", "Probablistic Forecasts"],
     "github": "https://github.com/d2osborn/OSUHackathon2026",
     "slides": "https://drive.google.com/file/d/1OQ0xCjdN1KOG8zlJckhs-wizpFIYfsoy/view"
@@ -21,7 +21,7 @@
     "title": "Probabilistic Modeling of True Hitting Talent in Major League Baseball",
     "year": "Feb 2026 - Mar 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Architected a probabilistic forecasting model utilizing a hierarchical Bayesian framework and Gaussian processes in NumPyro to project true-talent home run rates, improving out-of-sample prediction accuracy by over 31% against benchmark models. Developed a Streamlit dashboard to visualize home-run projections for 2026, providing a user-friendly interface for player-level HR distributions and uncertainty intervals.",
+    "description": "Architected a probabilistic forecasting model utilizing a hierarchical Bayesian framework and Gaussian processes in NumPyro and JAX to project true-talent home run rates, improving out-of-sample prediction accuracy by over 31% against benchmark models. Developed a Streamlit dashboard to visualize home-run projections for 2026, providing a user-friendly interface for player-level HR distributions and uncertainty intervals.",
     "github": "https://github.com/d2osborn/probabilistic_projection_project",
     "url": "https://bayesian-proj-hrs-2026.streamlit.app/",
     "paper": "https://drive.google.com/file/d/1T8KniOVgci-JsFqesSmtvree7ZQY2gpg/view?usp=sharing",
