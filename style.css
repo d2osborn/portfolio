@@ -383,11 +383,10 @@ a:hover {
 }
 
 .footer-icon {
-  display: inline-block; /* Bring them back! */
+  display: inline-block;
   width: 16px;
   height: 16px;
-  filter: invert(1); /* Flips the black icons to white so they show up on dark backgrounds */
-  opacity: 0.6; /* Softens them to match the muted text */
+  opacity: 0.6;
   transition: opacity 0.2s ease;
 }
 
