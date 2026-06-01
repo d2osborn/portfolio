@@ -1,5 +1,23 @@
 [
   {
+    "title": "An Analysis of Spatial Homicide Patterns in Chicago",
+    "year": "Jan 2026 - Jun 2026",
+    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Authored a formal research paper on the spatial concentration of homicide in Chicago using 8.4M crime records across an aggregated 500m hexagonal grid. Applied spatial clustering, dimensionality reduction, gradient-boosted prediction, and regression analyses to identify homicide zones and assess law enforcement bias.",
+    "tags": ["spatial criminology, concentrated disadvantage, predictive modeling, hotspot analysis, environmental criminology"],
+    "github": "https://github.com/DylanBerry1/gun-violence-analysis",
+    "paper": "https://drive.google.com/file/d/1_UQoZRgyMybrSLEAEGrw9m_k6MltZIIp/view?usp=sharing"
+  },
+  {
+    "title": "Hidden NAFSI Predictive Modeling for Agricultural Resilience",
+    "year": "Apr 2026",
+    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Developed a probabilistic vegetation model utilizing Hilbert Space Gaussian Processes in NumPyro and JAX to predict seasonal crop growth trajectories for corn, soybean, and winter wheat across the U.S. Corn Belt. Earned 1st place recognition among all competing teams in the inaugural 2026 NAFSI Student Data Challenge, earning the $2,000 top prize.",
+    "tags": ["Bayesian Modeling", "Probablistic Forecasts"],
+    "github": "https://github.com/sardorsob/GeoCrop-Spatiotemporal-Modeling",
+    "paper": "https://link-to-your-pdf.com/paper.pdf"
+  },
+  {
     "title": "Probabilistic Modeling of True Hitting Talent in Major League Baseball",
     "year": "Feb 2026 - Mar 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
