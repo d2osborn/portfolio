@@ -49,7 +49,7 @@
 "year": "Feb 2026",
 "image":  "images/mcvai.svg",
 "description": "Forecasted expected yardage of offensive play designs using gradient boosted trees and presented findings to NFL analysts via an interactive Streamlit dashboard at the 2026 Football Analytics Blitz (15 teams, ~70 students).",
-"tags": ["Football Analytics", "Interactive Dashboard"],
+"tags": [""],
 "github": "https://github.com/pranavrajaram/football-analytics-blitz-2026",
 "url": "https://seanmcvai.streamlit.app/"
 },
@@ -58,7 +58,7 @@
 "year": "Jun 2025 - Aug 2025",
 "image":  "images/aoe_paper.svg",
 "description": "Built a hierarchical Bayesian framework in PyMC to estimate latent defensive aggression rates from spatiotemporal tracking data, utilizing catch probability estimates modeled with a generalized additive model in pyGAM. Top 10 finalist among 50 teams in the 2025 SMT Data Challenge.",
-"tags": ["Baseball Analytics", "Bayesian Modeling"],
+"tags": [""],
 "github": "https://github.com/d2osborn/SMTChallenge2025",
 "paper": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
 },
@@ -67,7 +67,7 @@
 "year": "Apr 2025 - May 2025",
 "image":  "images/two_strikes.svg",
 "description": "Created an interactive website using Python and D3.js, utilizing 700,000+ MLB Statcast records, to analyze relationships between deviations in swing mechanics and offensive outcomes in high-pressure contexts.",
-"tags": ["Baseball Analytics", "Data Visualization", "Interactive Website"],
+"tags": [""],
 "github": "https://github.com/d2osborn/dsc106-finalproject",
 "url": "https://d2osborn.github.io/dsc106-finalproject/"
 },
@@ -76,7 +76,7 @@
 "year": "Feb 2025 - Mar 2025",
 "image": "images/delesign-real-estate-market.svg",
 "description": "Architected a predictive pricing pipeline for 2.2M+ U.S. properties, synthesizing heterogeneous data sources (crime, tax, demographics) into a gradient-boosting framework to capture complex market drivers.",
-"tags": ["Geospatial Data", "Machine Learning"],
+"tags": [""],
 "github": "https://github.com/SatrunsDream/DSC148-Project",
 "paper": "papers/house_price_project.pdf"
 },
@@ -85,7 +85,7 @@
 "year": "2025",
 "image": "images/icons8-spotify-96.svg",
 "description": "A statistical analysis on 100,000+ Spotify tracks to identify key audio features linked to song popularity.",
-"tags": ["Data Analysis", "Statistical Analysis"],
+"tags": [""],
 "github": "https://github.com/YooNice100/math189proj",
 "paper": "https://drive.google.com/file/d/1FMkOFZF_mu6pi2VC6lzXy53v4j-H88H7/view?usp=sharing"
 },
@@ -94,7 +94,7 @@
 "year": "May 2024 - Jun 2024",
 "image": "images/delesign-alternative-energy-sources.svg",
 "description": "Developed a Random Forest regressor to forecast regional energy consumption, utilizing permutation tests and NMAR analysis to quantify statistical dependencies between electricity sales and peak demand loss.",
-"tags": ["Machine Learning", "Resource Management"],
+"tags": [""],
 "github": "https://github.com/d2osborn/PowerOutages",
 "url": "https://d2osborn.github.io/PowerOutages/"
 },
@@ -103,7 +103,7 @@
 "year": "Jun 2023 - Jul 2023",
 "image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
 "description": "The interactive Looker Studio dashboard that provides a user-friendly interface for coaches and players to track their performances and showcase their abilities to college scouts for the PSCL.",
-"tags": ["Baseball Analytics", "Data Visualization"],
+"tags": [""],
 "url": "https://lookerstudio.google.com/u/0/reporting/489badb7-a77f-4fb5-9505-fa4db8bb8d4f/page/MzvTD"
 }
 ]
