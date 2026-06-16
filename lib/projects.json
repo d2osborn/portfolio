@@ -3,8 +3,7 @@
     "title": "An Analysis of Spatial Homicide Patterns in Chicago",
     "year": "Jan 2026 - Jun 2026",
     "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Authored a formal research paper on the spatial concentration of homicide in Chicago using 8.4M crime records across an aggregated 500m hexagonal grid. Applied spatial clustering, dimensionality reduction, gradient-boosted prediction, and regression analyses to identify homicide zones and assess law enforcement bias.",
-    "tags": ["spatial criminology, concentrated disadvantage, predictive modeling, hotspot analysis, environmental criminology"],
+    "description": "Authored a formal research paper on identifying and understanding the spatial concentration of homicide in Chicago using 8.4M crime records across an aggregated 500m hexagonal grid. Applied spatial clustering, dimensionality reduction, gradient boosted predictions, and regression analyses.",
     "github": "https://github.com/DylanBerry1/gun-violence-analysis",
     "paper": "https://drive.google.com/file/d/1_UQoZRgyMybrSLEAEGrw9m_k6MltZIIp/view?usp=sharing"
   },
