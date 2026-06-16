@@ -3,260 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Diego Osborn — Data Scientist. UC San Diego '26. Baseball analytics, probabilistic modeling, and sports analytics." />
   <title>Diego Osborn</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main>
-    
-    <header class="site-header">
-      <h1>Diego Osborn</h1>
-      <p class="subtitle">Data Scientist</p>
-      <!-- <p class="subtitle">Position for the Team Name -->
-</p>
-      
-    </header>
+  <!-- Apply dark mode before paint to prevent flash -->
+  <script>
+    const theme = sessionStorage.getItem('theme');
+    const match = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if ((theme && theme === 'dark') || (!theme && match)) {
+      document.body.classList.add('dark');
+    }
+  </script>
 
-    <nav>
-      <ul>
-        <li><a href="#introduction">Home</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#contacts">Contact</a></li>
-      </ul>
-    </nav>
+  <div id="wrapper">
+    <main>
 
-    <section id="introduction" class="intro-section">
-      <div class="intro-text">
+      <!-- ============================
+           Name & Tagline
+           ============================ -->
+      <section id="info">
+        <div id="text">
+          <span id="name">Diego Osborn</span>
+        </div>
+        <div id="bio">Data Scientist</div>
+        <!-- <div id="bio">Position for the Team Name</div> -->
+      </section>
+
+      <!-- ============================
+           Links bar
+           ============================ -->
+      <section id="links">
+        <div id="left">
+          <a href=".">Home</a>
+          <a href="projects/">Projects</a>
+          <a href="posts/">Blog</a>
+          <a href="https://drive.google.com/file/d/1BTUsIWbsN5KWZw2WbX2TV-1tNRYQdMYU/view?usp=sharing" target="_blank">Resume</a>
+        </div>
+        <div id="right">
+          <a href="https://github.com/d2osborn" aria-label="GitHub" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/diego-osborn" aria-label="LinkedIn" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://x.com/diegosborn" aria-label="Twitter / X" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a href="mailto:diegoisaacosborn@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <button id="theme-toggle" aria-label="theme switch">
+            <span class="moon-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+            <span class="sun-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================
+           Main content
+           ============================ -->
+      <section id="brief" class="prose">
+
         <p>
-          <!-- I am currently a Position for the Team Name.
-          I received my B.S. in Data Science at UC San Diego, where I spent time working as a data science intern for UC San Diego's baseball team. -->
+          Hi there!
           I am a recent Data Science graduate from UC San Diego. 
-          <!-- I currently work as a data science intern for UC San Diego's baseball team. -->
           I previously worked as a data science intern for UC San Diego's baseball team, and as a data analytics intern for the UC San Diego Career Center and the Palm Springs Power baseball team.
         </p>
         <p>
-          I'm interested in data science, probabilistic modeling, and sports analytics. Feel free to reach out to me via my contact page!
+          I'm very interested in data science, probabilistic modeling, and sports analytics. If you're interesting in reaching out please feel free to shoot an email or check out my socials!
         </p>
-      </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education">
-      <h2>Education</h2>
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>University of California, San Diego</span>
-            <span>B.S. Data Science</span>
-            <span class="entry-dates">Sep 2022 - Jun 2026</span>
-            <!-- <span class="entry-dates">Sep 2022 - Jun 2026</span> -->
-          </h4>
+        <!-- ~~~~~~ Education ~~~~~~ -->
+        <h1 id="education">Education</h1>
+
+        <div class="exp">
+          <div class="exp-head">
+            <span class="title">University of California, San Diego - <em>B.S. Data Science</em></span>
+            <span class="date">Sep 2022 – Jun 2026</span>
+          </div>
           <p>
             Organizations: Triton Ball Sports Analytics Club, Data Science Student Society<br>
             Graduate Coursework (cross enrollment): Bayesian Inference, MCMC, Hierarchical Modeling<br>
             Relevant Coursework: Machine Learning, Mathematical Statistics, Deep Learning, Relational Databases, Cloud Computing<br>
-            Honors: Eleanor Roosevelt College Honors Program, <em>Provost Honors</em> (5x)<br>
+            Honors: Eleanor Roosevelt College Honors Program, <em>Provost Honors</em> (5x)
           </p>
         </div>
-      </article>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-      <h2>Experience</h2>
+        <!-- ~~~~~~ Experiences ~~~~~~ -->
+        <h1 id="experience">Experiences</h1>
 
-      <!-- <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>Team Name<em>Position</em></span>
-            <span class="entry-dates">Jun 2026 - Present</span>
-          </h4>
+        <!-- <div class="exp">
+          <div class="exp-head">
+            <span class="title">Team Name · <em>Position</em></span>
+            <span class="date">Jun 2026 – Present</span>
+          </div>
+          <p></p>
+        </div> -->
+
+        <div class="exp">
+          <div class="exp-head">
+            <span class="title">UC San Diego Baseball - <em>Data Science Intern</em></span>
+            <span class="date">Feb 2023 – Jun 2026</span>
+          </div>
           <p>
-
+            Led the design and development of internal pitching models--from pitch evaluation to pitch classification--using gradient boosted trees and unsupervised learning methods for player evaluation and development purposes.
+            Led the engineering of a centralized BigQuery database that integrated automated processes for over 3 million Trackman records.
+            Routinely translated these complex analytical findings to coaching staff with written reports and presentations, and promoted a collaborative R&amp;D environment within a 10-person analytics team through peer code reviews and shared research.
           </p>
         </div>
-      </article> -->
 
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>UC San Diego Baseball - <em>Data Science Intern</em></span>
-            <span class="entry-dates">Feb 2023 - Jun 2026</span>
-          </h4>
-            <p>
-              Led the design and development of internal pitching models--from pitch evaluation to pitch classification--using gradient boosted trees and unsupervised learning methods on pitch-tracking data to support the evaluation and development of college baseball players.
-              <!-- This includes building internal pitching models for pitch evaluation and classification, and building out the architecture for an internal projection system.
-              Apply techniques such as unsupervised learning, gradient boosting, generalized additive models, and hierarchical Bayesian modeling.  -->
-              Led the engineering of a centralized BigQuery database that integrated automated processes for over 3 million Trackman records.
-              Routinely translated these complex R&D findings to the coaching staff through presentations and written reports, and promoted a collaborative R&D environment within a 10-person analytics group through peer code reviews and shared research.
-              
-              <!-- Designed and implemented Bayesian hierarchical models leveraging NCAA pitch-level and batted-ball tracking data to project true-talent player performance, improving projection accuracy by #% over baseline.<br></br>
-              Automated the end-to-end generation of opponent scouting reports using Python, reducing weekly preparation time by 90% to streamline pre-game strategy.<br></br>
-              Designed a semi-supervised pipeline using expectation-maximization and gaussian mixture models to resolve pitch label noise, and gradient boosted trees for robust pitch classification.<br></br>
-              Developed a Stuff+ framework to quantify pitch "nastiness" using gradient boosted trees on pitch-tracking features for use in scouting and player development.<br></br>
-              Forecasted expected win ranges across varying schedule scenarios using Monte Carlo simulations to support strategic planning.<br></br>
-              Engineered a Python data pipeline to establish a centralized BigQuery cloud warehouse for 2M+ TrackMan records, and authored technical SOPs to standardize database access and workflows for a 10-person analytics team.<br></br>
-              Designed automated post-game visualization reports to track velocity, movement profiles, and location heatmaps, streamlining post-game analysis for coaches and players.<br></br>
-              Contributed to the 2023 Big West Conference Championship title through support for analytics operations and ad hoc scouting analysis. --> 
-            </p>
-        </div>
-      </article>
-
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>Halıcıoğlu Data Science Institute - <em>Undergraduate Senior Capstone Research (Yoav Freund's Group)</em></span>
-            <span class="entry-dates">Jan 2026 - Jun 2026</span>
-          </h4>
+        <div class="exp">
+          <div class="exp-head">
+            <span class="title">Halıcıoğlu Data Science Institute - <em>Senior Capstone Research</em></span>
+            <span class="date">Jan 2026 – Jun 2026</span>
+          </div>
           <p>
-            Authored a formal research paper on identifying and understanding the spatial concentration of homicide in Chicago using 8.4M crime records across an aggregated 500m hexagonal grid. Applied spatial clustering, dimensionality reduction, gradient boosted predictions, and regression analyses.
+            Authored a formal research paper under Professor Yoav Freund on identifying and understanding the spatial concentration of urban violence and crime in Chicago: <em>An Analysis of Spatial Homicide Patterns in Chicago</em>.
           </p>
         </div>
-      </article>
 
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>UC San Diego Career Center - <em>Data Analytics Intern</em></span>
-            <span class="entry-dates">Sep 2024 - Jun 2025</span>
-          </h4>
+        <div class="exp">
+          <div class="exp-head">
+            <span class="title">UC San Diego Career Center - <em>Data Analytics Intern</em></span>
+            <span class="date">Sep 2024 – Jun 2025</span>
+          </div>
           <p>
             Designed and implemented a reproducible Python ETL pipeline integrating survey and LinkedIn data for more than 12,000 graduates into a centralized dataset, while developing Git SOPs to standardize version control practices for a four-person analytics team. 
             Managed the migration of over 100,000 student career profiles from Handshake into a local PostgreSQL database, using SQL to support university data retention compliance and produce analysis-ready datasets.
           </p>
         </div>
-      </article>
 
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>Palm Springs Power Baseball - <em>Data Analytics Intern</em></span>
-            <span class="entry-dates">Jun 2023 - Jul 2023</span>
-          </h4>
+        <div class="exp">
+          <div class="exp-head">
+            <span class="title">Palm Springs Power Baseball - <em>Data Analytics Intern</em></span>
+            <span class="date">Jun 2023 – Jul 2023</span>
+          </div>
           <p>
             Oversaw data validation for league games, supporting the official website, and developed an interactive Looker Studio dashboard to visualize pitch-event KPIs used by coaches and over 260 players.
           </p>
         </div>
-      </article>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Selected Projects</h2>
-      <div class="projects"></div>
-    </section>
+        <!-- ~~~~~~ Awards ~~~~~~ -->
+        <h1 id="awards">Awards</h1>
 
-    <!-- Awards Section -->
-    <section id="awards">
-      <h2>Awards</h2>
-      <!-- <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>2026 NAFSI Student Data Challenge Track 1 Winner</span>
-            <span class="entry-dates">Apr 2026</span>
-          </h4>
-          <p>
-            <i>Issued by The National Food Security & Innovation Hub (NAFSI)</i><br></br>
-            Awarded 1st place and a $2,000 prize in the inaugural, nationwide CropSmart data competition for my project, <em>NAFSI Predictive Modeling for Agricultural Resilience</em>. Solely responsible for developing the top-performing crop yield prediction model by applying Hilbert Space Gaussian Processes (HSGPs) to massive geospatial datasets.
-          </p>
-          </p>
+        <!-- <div class="award">
+          <div class="award-head">
+            <span class="title">2026 NAFSI Student Data Challenge Track 1 Winner</span>
+            <span class="date">Apr 2026</span>
+          </div>
+          <p>Awarded 1st place and $2,000 prize in the inaugural nationwide CropSmart data competition for predictive crop yield modeling with Hilbert Space Gaussian Processes. Issued by The National Food Security &amp; Innovation Hub.</p>
+        </div> -->
+
+        <div class="award">
+          <div class="award-head">
+            <span class="title">2025 SMT Data Challenge Honorable Mention</span>
+            <span class="date">Aug 2025</span>
+          </div>
+          <p>Top 10 finalist out of 50 teams (114 students) for my project: <em>Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model</em>. Issued by SportsMEDIA Technology.</p>
         </div>
-      </article> -->
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>2025 SMT Data Challenge Honorable Mention</span>
-            <span class="entry-dates">Aug 2025</span>
-          </h4>
-          <p>
-            <i>Issued by SportsMEDIA Technology (SMT)</i><br></br>
-            Recognized among top participants (out of 50 teams and 114 students) for my innovative, baseball, player-tracking, quantitative analysis project, <em>Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model</em>, in an international sports analytics competition.
-          </p>
+
+        <div class="award">
+          <div class="award-head">
+            <span class="title">Yoseloff Foundation Scholarship</span>
+            <span class="date">Jan 2025</span>
+          </div>
+          <p>One of four nationwide recipients to attend the 2025 SABR Analytics Conference. Issued by the Society for American Baseball Research.</p>
         </div>
-      </article>
 
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>Nanar and Anthony Yoseloff Foundation Scholarship</span>
-            <span class="entry-dates">Jan 2025</span>
-          </h4>
-          <p>
-            <i>Issued by Society for American Baseball Research (SABR)</i><br></br>
-            I am grateful to say that I was selected to receive one of four nationwide Nanar and Anthony Yoseloff Foundation Scholarships to attend the 2025 SABR Analytics Conference.
-          </p>
-        </div>
-      </article>
-    </section>
+      </section>
 
-    <!-- Certifications Section -->
-    <!-- <section id="certifications">
-      <h2>Certifications</h2>
-
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>Codecademy: Design Databases with PostgreSQL</span>
-            <span class="entry-dates">Aug 2025</span>
-          </h4>
-        </div>
-      </article>
-
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>Rapsodo Baseball Pitching Certification</span>
-            <span class="entry-dates">Aug 2025</span>
-          </h4>
-        </div>
-      </article>
-
-      <article class="entry">
-        <div class="entry-card">
-          <h4 class="entry-header">
-            <span>Rapsodo Baseball Hitting Certification</span>
-            <span class="entry-dates">Sep 2025</span>
-          </h4>
-        </div>
-      </article>
-    </section> -->
-
-    <!-- <div class="resume-download">
-      <a href="resume/Osborn_Diego_DS_Resume.pdf" target="_blank" rel="noopener noreferrer" class="download-btn">
-        Download Resume Here
-      </a>
-    </div> -->
-
-    <!-- Footer / Contacts Section -->
-    <section id="contacts"></section>
-  </main>
-
-  <footer class="footer-bar">
-    <div class="footer-item">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email icon" class="footer-icon">
-      <a href="mailto:diegoisaacosborn@gmail.com">diegoisaacosborn@gmail.com</a>
-    </div>
-    <div class="footer-item">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email icon" class="footer-icon">
-      <a href="mailto:d2osborn@ucsd.edu">d2osborn@ucsd.edu</a>
-    </div>
-    <div class="footer-item">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn icon" class="footer-icon">
-      <a href="https://linkedin.com/in/diego-osborn" target="_blank">LinkedIn</a>
-    </div>
-    <div class="footer-item">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub icon" class="footer-icon">
-      <a href="https://github.com/d2osborn" target="_blank">GitHub</a>
-    </div>
-    <div class="footer-item">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter icon" class="footer-icon">
-      <a href="https://x.com/diegosborn" target="_blank">Twitter</a>
-    </div>
-  </footer>
+    </main>
+  </div>
 
   <script type="module" src="index.js"></script>
 </body>

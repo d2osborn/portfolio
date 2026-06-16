@@ -1,108 +1,109 @@
 [
-  {
-    "title": "An Analysis of Spatial Homicide Patterns in Chicago",
-    "year": "Jan 2026 - Jun 2026",
-    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Authored a formal research paper on identifying and understanding the spatial concentration of homicide in Chicago using 8.4M crime records across an aggregated 500m hexagonal grid. Applied spatial clustering, dimensionality reduction, gradient boosted predictions, and regression analyses.",
-    "github": "https://github.com/DylanBerry1/gun-violence-analysis",
-    "paper": "https://drive.google.com/file/d/1_UQoZRgyMybrSLEAEGrw9m_k6MltZIIp/view?usp=sharing"
-  },
-  {
-    "title": "Hidden NAFSI Predictive Modeling for Agricultural Resilience",
-    "year": "Apr 2026",
-    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Developed a probabilistic vegetation model utilizing Hilbert Space Gaussian Processes in NumPyro and JAX to predict seasonal crop growth trajectories for corn, soybean, and winter wheat across the U.S. Corn Belt. Earned 1st place recognition among all competing teams in the inaugural 2026 NAFSI Student Data Challenge, earning the $2,000 top prize.",
-    "tags": ["Bayesian Modeling", "Probablistic Forecasts"],
-    "github": "https://github.com/sardorsob/GeoCrop-Spatiotemporal-Modeling",
-    "paper": "https://link-to-your-pdf.com/paper.pdf"
-  },
-  {
-    "title": "Probabilistic Modeling of True Hitting Talent in Major League Baseball",
-    "year": "Feb 2026 - Mar 2026",
-    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Architected a probabilistic forecasting model utilizing a hierarchical Bayesian framework and Gaussian processes in NumPyro and JAX to project true-talent home run rates, improving out-of-sample prediction accuracy by over 31% against benchmark models. Developed a Streamlit dashboard to visualize home-run projections for 2026, providing a user-friendly interface for player-level HR distributions and uncertainty intervals.",
-    "github": "https://github.com/d2osborn/probabilistic_projection_project",
-    "url": "https://bayesian-proj-hrs-2026.streamlit.app/",
-    "paper": "https://drive.google.com/file/d/1T8KniOVgci-JsFqesSmtvree7ZQY2gpg/view?usp=sharing"
-  },
-  {
-    "title": "Hidden Unshifting the Infield: Spatial Out-Probabilities in the Post-Shift Era",
-    "year": "Mar 2026",
-    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Leveraged Bayesian ensemble trees in PyMC to model infield out-probabilities (0.86 held-out ROC-AUC), mapping the spatial impact of the 2023 MLB shift ban.",
-    "tags": ["Baseball Analytics", "Bayesian Modeling", "Probablistic Forecasts"],
-    "github": "https://github.com/d2osborn/OSUHackathon2026"
-  },
-  {
-    "title": "Hidden A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers",
-    "year": "Dec 2025 - Mar 2026",
-    "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Developed a Bayesian hierarchical model in PyMC to forecast the latent arm-injury risk and burden for # MLB pitchers. Created an interactive dashboard to visualize player uncertainty estimates.",
-    "tags": ["Baseball Analytics", "Bayesian Modeling", "Probablistic Forecasts"],
-    "github": "https://github.com/SatrunsDream/Workload-effect-on-pitcher-injury",
-    "paper": "https://link-to-your-pdf.com/paper.pdf"
-  },
-  {
-    "title": "Sean McVAI: Beating Two-High Coverage",
-    "year": "Feb 2026",
-    "image":  "images/mcvai.svg",
-    "description": "Quantified the strategic risk and upside of offensive play designs by forecasting expected yardage gained with gradient boosted trees. Developed an interactive Streamlit dashboard integrating 2 predictive models for play design evaluation, presenting the tool to NFL analysts at the 2026 Football Analytics Blitz against 15 teams (~70 students).",
-    "tags": ["Football Analytics", "Interactive Dashboard"],
-    "github": "https://github.com/pranavrajaram/football-analytics-blitz-2026",
-    "url": "https://seanmcvai.streamlit.app/",
-    "slides": "https://drive.google.com/file/d/1rXEVCKfvD5GqhqaD8-Yc5gT5VpQ2Ai-D/view?usp=sharing"
-  },
-  {
-    "title": "Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
-    "year": "Jun 2025 - Aug 2025",
-    "image":  "images/aoe_paper.svg",
-    "description": "Implemented a hierarchical Bayesian framework in PyMC to formulate a defensive baseball metric, estimating latent aggression rates from spatiotemporal tracking data. Earned honorable mention recognition as a Top 10 finalist among 50 teams (114 students) in the 2025 SMT Data Challenge.",
-    "tags": ["Baseball Analytics", "Bayesian Modeling"],
-    "github": "https://github.com/d2osborn/SMTChallenge2025",
-    "paper": "papers/SMT Challenge 2025 Paper.pdf"
-  },
-  {
-    "title": "The Effect of Two Strikes on a Hitter's Swing",
-    "year": "Apr 2025 - May 2025",
-    "image":  "images/two_strikes.svg",
-    "description": "Created an interactive website using Python and D3.js, utilizing 700,000+ MLB Statcast records, to analyze relationships between deviations in swing mechanics and offensive outcomes in high-pressure contexts.",
-    "tags": ["Baseball Analytics", "Data Visualization", "Interactive Dashboard"],
-    "github": "https://github.com/d2osborn/dsc106-finalproject",
-    "url": "https://d2osborn.github.io/dsc106-finalproject/"
-  },
-  {
-    "title": "Hidden What Is a Home Worth? Large-Scale Ensemble Learning for U.S. Housing Prices",
-    "year": "Feb 2025 - Mar 2025",
-    "image": "images/delesign-real-estate-market.svg",
-    "description": "Architected a predictive pricing pipeline for 2.2M+ U.S. properties, synthesizing heterogeneous data sources (crime, tax, demographics) into a gradient-boosting framework to capture complex market drivers.",
-    "tags": ["Geospatial Data", "Machine Learning"],
-    "github": "https://github.com/SatrunsDream/DSC148-Project",
-    "paper": "papers/house_price_project.pdf"
-  },
-  {
-    "title": "Hidden Spotify Popularity Analysis",
-    "year": "2025",
-    "image": "images/icons8-spotify-96.svg",
-    "description": "A statistical analysis on 100,000+ Spotify tracks to identify key audio features linked to song popularity.",
-    "tags": ["Data Analysis", "Statistical Analysis"],
-    "github": "https://github.com/YooNice100/math189proj",
-    "paper": "https://drive.google.com/file/d/1FMkOFZF_mu6pi2VC6lzXy53v4j-H88H7/view?usp=sharing"
-  },
-  {
-    "title": "Hidden Power Outages Statistical Analysis",
-    "year": "May 2024 - Jun 2024",
-    "image": "images/delesign-alternative-energy-sources.svg",
-    "description": "Developed a Random Forest regressor to forecast regional energy consumption, utilizing permutation tests and NMAR analysis to quantify statistical dependencies between electricity sales and peak demand loss.",
-    "tags": ["Machine Learning", "Resource Management"],
-    "github": "https://github.com/d2osborn/PowerOutages",
-    "url": "https://d2osborn.github.io/PowerOutages/"
-  },
-  {
-    "title": "Hidden PSCL Interactive Dashboard",
-    "year": "Jun 2023 - Jul 2023",
-    "image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
-    "description": "The interactive Looker Studio dashboard that provides a user-friendly interface for coaches and players to track their performances and showcase their abilities to college scouts for the PSCL.",
-    "tags": ["Baseball Analytics", "Data Visualization"],
-    "url": "https://lookerstudio.google.com/u/0/reporting/489badb7-a77f-4fb5-9505-fa4db8bb8d4f/page/MzvTD"
-  }
+{
+"title": "An Analysis of Spatial Homicide Patterns in Chicago",
+"year": "Jan 2026 - Jun 2026",
+"image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+"description": "Quantified the structural drivers of urban violence and crime in Chicago utilizing spatial clustering, dimensionality reduction, gradient boosted trees, and regression analyses on 8.4M crime records across a 500m hexagonal grid.",
+"tags": [""],
+"github": "https://github.com/DylanBerry1/gun-violence-analysis",
+"paper": "https://drive.google.com/file/d/1_UQoZRgyMybrSLEAEGrw9m_k6MltZIIp/view?usp=sharing"
+},
+{
+"title": "Hidden NAFSI Predictive Modeling for Agricultural Resilience",
+"year": "Apr 2026",
+"image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+"description": "Developed a probabilistic vegetation model utilizing Hilbert Space Gaussian Processes in NumPyro and JAX to predict seasonal crop growth trajectories for corn, soybean, and winter wheat across the U.S. Corn Belt. 1st place recognition among all competing teams in the inaugural 2026 NAFSI Student Data Challenge, earning the $2,000 top prize.",
+"tags": [""],
+"github": "https://github.com/sardorsob/GeoCrop-Spatiotemporal-Modeling",
+"paper": "https://link-to-your-pdf.com/paper.pdf"
+},
+{
+"title": "Probabilistic Modeling of True Hitting Talent in Major League Baseball",
+"year": "Feb 2026 - Mar 2026",
+"image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+"description": "Architected a hierarchical Bayesian projection model utilizing Gaussian processes in NumPyro and JAX to estimate and forecast true-talent home run rates, improving out-of-sample accuracy by 31% against benchmarks. Developed a Streamlit dashboard to visualize player-level HR projections with uncertainty intervals.",
+"tags": [""],
+"github": "https://github.com/d2osborn/probabilistic_projection_project",
+"url": "https://bayesian-proj-hrs-2026.streamlit.app/",
+"paper": "https://drive.google.com/file/d/1T8KniOVgci-JsFqesSmtvree7ZQY2gpg/view?usp=sharing"
+},
+{
+"title": "Hidden Unshifting the Infield: Spatial Out-Probabilities in the Post-Shift Era",
+"year": "Mar 2026",
+"image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+"description": "Leveraged Bayesian ensemble trees in PyMC to model infield out-probabilities (0.86 held-out ROC-AUC), mapping the spatial impact of the 2023 MLB shift ban.",
+"tags": [""],
+"github": "https://github.com/d2osborn/OSUHackathon2026"
+},
+{
+"title": "Hidden A Bayesian Approach to Modeling Arm-Injury Risk in Pitchers",
+"year": "Dec 2025 - Mar 2026",
+"image":  "https://dsc106.com/labs/lab02/images/empty.svg",
+"description": "Developed a Bayesian hierarchical model in PyMC to forecast the latent arm-injury risk and burden for # MLB pitchers. Created an interactive dashboard to visualize player uncertainty estimates.",
+"tags": [""],
+"github": "https://github.com/SatrunsDream/Workload-effect-on-pitcher-injury",
+"paper": "https://link-to-your-pdf.com/paper.pdf"
+},
+{
+"title": "Sean McVAI: Beating Two-High Coverage",
+"year": "Feb 2026",
+"image":  "images/mcvai.svg",
+"description": "Forecasted expected yardage of offensive play designs using gradient boosted trees and presented findings to NFL analysts via an interactive Streamlit dashboard at the 2026 Football Analytics Blitz (15 teams, ~70 students).",
+"tags": ["Football Analytics", "Interactive Dashboard"],
+"github": "https://github.com/pranavrajaram/football-analytics-blitz-2026",
+"url": "https://seanmcvai.streamlit.app/"
+},
+{
+"title": "Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
+"year": "Jun 2025 - Aug 2025",
+"image":  "images/aoe_paper.svg",
+"description": "Built a hierarchical Bayesian framework in PyMC to estimate latent defensive aggression rates from spatiotemporal tracking data, utilizing catch probability estimates modeled with a generalized additive model in pyGAM. Top 10 finalist among 50 teams in the 2025 SMT Data Challenge.",
+"tags": ["Baseball Analytics", "Bayesian Modeling"],
+"github": "https://github.com/d2osborn/SMTChallenge2025",
+"paper": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
+},
+{
+"title": "The Effect of Two Strikes on a Hitter's Swing",
+"year": "Apr 2025 - May 2025",
+"image":  "images/two_strikes.svg",
+"description": "Created an interactive website using Python and D3.js, utilizing 700,000+ MLB Statcast records, to analyze relationships between deviations in swing mechanics and offensive outcomes in high-pressure contexts.",
+"tags": ["Baseball Analytics", "Data Visualization", "Interactive Website"],
+"github": "https://github.com/d2osborn/dsc106-finalproject",
+"url": "https://d2osborn.github.io/dsc106-finalproject/"
+},
+{
+"title": "Hidden What Is a Home Worth? Large-Scale Ensemble Learning for U.S. Housing Prices",
+"year": "Feb 2025 - Mar 2025",
+"image": "images/delesign-real-estate-market.svg",
+"description": "Architected a predictive pricing pipeline for 2.2M+ U.S. properties, synthesizing heterogeneous data sources (crime, tax, demographics) into a gradient-boosting framework to capture complex market drivers.",
+"tags": ["Geospatial Data", "Machine Learning"],
+"github": "https://github.com/SatrunsDream/DSC148-Project",
+"paper": "papers/house_price_project.pdf"
+},
+{
+"title": "Hidden Spotify Popularity Analysis",
+"year": "2025",
+"image": "images/icons8-spotify-96.svg",
+"description": "A statistical analysis on 100,000+ Spotify tracks to identify key audio features linked to song popularity.",
+"tags": ["Data Analysis", "Statistical Analysis"],
+"github": "https://github.com/YooNice100/math189proj",
+"paper": "https://drive.google.com/file/d/1FMkOFZF_mu6pi2VC6lzXy53v4j-H88H7/view?usp=sharing"
+},
+{
+"title": "Hidden Power Outages Statistical Analysis",
+"year": "May 2024 - Jun 2024",
+"image": "images/delesign-alternative-energy-sources.svg",
+"description": "Developed a Random Forest regressor to forecast regional energy consumption, utilizing permutation tests and NMAR analysis to quantify statistical dependencies between electricity sales and peak demand loss.",
+"tags": ["Machine Learning", "Resource Management"],
+"github": "https://github.com/d2osborn/PowerOutages",
+"url": "https://d2osborn.github.io/PowerOutages/"
+},
+{
+"title": "Hidden PSCL Interactive Dashboard",
+"year": "Jun 2023 - Jul 2023",
+"image": "images/Screenshot 2025-05-06 at 2.11.02 AM.svg",
+"description": "The interactive Looker Studio dashboard that provides a user-friendly interface for coaches and players to track their performances and showcase their abilities to college scouts for the PSCL.",
+"tags": ["Baseball Analytics", "Data Visualization"],
+"url": "https://lookerstudio.google.com/u/0/reporting/489badb7-a77f-4fb5-9505-fa4db8bb8d4f/page/MzvTD"
+}
 ]

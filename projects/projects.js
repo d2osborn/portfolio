@@ -1,103 +1,85 @@
-import { fetchJSON, renderProjects } from '../global.js';
-import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
+import { fetchJSON } from '../global.js';
 
-let selectedIndex = -1;
-let allProjects = [];
-let query = '';
-
-function filterProjects() {
-  return allProjects.filter(project => {
-    const values = Object.values(project).join('\n').toLowerCase();
-    return values.includes(query.toLowerCase());
+// --------------------------
+// Dark / Light theme toggle
+// --------------------------
+const toggle = document.getElementById('theme-toggle');
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    sessionStorage.setItem(
+      'theme',
+      document.body.classList.contains('dark') ? 'dark' : 'light'
+    );
   });
 }
 
-function renderPieChart(projectsGiven) {
-  const rolledData = d3.rollups(projectsGiven, v => v.length, d => d.year);
-  const data = rolledData.map(([year, count]) => ({
-    label: year,
-    value: count
-  }));
+// --------------------------
+// Project rendering — Card format for sub-page
+// --------------------------
+function renderProjectCards(projects, containerElement) {
+  if (!Array.isArray(projects) || !(containerElement instanceof HTMLElement)) return;
 
-  const color = d3.scaleOrdinal(d3.schemeTableau10).domain(data.map(d => d.label));
-  const arcGenerator = d3.arc().innerRadius(15).outerRadius(50); // donut chart for cleaner center
-  const sliceGenerator = d3.pie().value(d => d.value);
-  const arcData = sliceGenerator(data);
+  containerElement.innerHTML = '';
 
-  const svg = d3.select('#projects-pie-plot')
-    .attr('width', 200)
-    .attr('height', 200)
-    .attr('viewBox', '-60 -60 120 120')
-    .attr('preserveAspectRatio', 'xMidYMid meet');
+  const visibleProjects = projects.filter(p =>
+    !(p.title?.startsWith('Project ') ||
+      p.title?.startsWith('Hidden ') ||
+      p.title?.startsWith('(in') ||
+      p.title?.startsWith('Spotify'))
+  );
 
-  svg.selectAll('*').remove();
+  const html = visibleProjects.map(project => {
+    // Generate tags if they exist
+    const tagsHtml = project.tags && Array.isArray(project.tags) 
+      ? `<div class="card-tags">${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}</div>`
+      : '';
 
-  svg.selectAll('path')
-    .data(arcData)
-    .join('path')
-    .attr('d', arcGenerator)
-    .attr('fill', d => color(d.data.label))
-    .attr('stroke', 'none')
-    .attr('class', d => d.index === selectedIndex ? 'selected' : null)
-    .on('click', function(event, d) {
-      const index = d.index;
-      selectedIndex = selectedIndex === index ? -1 : index;
-      updateUI();
-    });
-
-  const legend = d3.select('.legend');
-  legend.selectAll('*').remove();
-
-  legend.selectAll('li')
-    .data(data)
-    .join('li')
-    .attr('class', (_, i) => i === selectedIndex ? 'legend-item selected' : 'legend-item')
-    .attr('style', d => `--color: ${color(d.label)}`)
-    .html(d => `<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`)
-    .data(data)
-    .join('li')
-    .each(function(_, i) {
-      d3.select(this).on('click', () => {
-        selectedIndex = selectedIndex === i ? -1 : i;
-        updateUI();
-      });
-    });
-}
-
-function updateUI() {
-  const searchFiltered = filterProjects(); // always apply search filter
-
-  let visibleProjects = [...searchFiltered];
-  if (selectedIndex !== -1) {
-    const rolled = d3.rollups(searchFiltered, v => v.length, d => d.year);
-    const data = rolled.map(([year, count]) => ({ label: year, value: count }));
-    const selectedYear = data[selectedIndex]?.label;
-
-    if (selectedYear) {
-      visibleProjects = searchFiltered.filter(p => p.year === selectedYear);
+    // Build inline links
+    const links = [];
+    if (project.paper && !project.paper.includes('link-to-your-pdf.com')) {
+      const paperUrl = project.paper.startsWith('http') ? project.paper : '../' + project.paper;
+      links.push(`<a href="${paperUrl}" target="_blank" rel="noopener noreferrer">Paper Link</a>`);
     }
+    if (project.slides) {
+      links.push(`<a href="${project.slides.startsWith('http') ? project.slides : '../' + project.slides}" target="_blank" rel="noopener noreferrer">Slides Link</a>`);
+    }
+    if (project.github) {
+      links.push(`<a href="${project.github}" target="_blank" rel="noopener noreferrer">Code Link</a>`);
+    }
+    if (project.url) {
+      links.push(`<a href="${project.url}" target="_blank" rel="noopener noreferrer">Live Link</a>`);
+    }
+    
+    const linksHtml = links.length 
+      ? `<div class="card-links">${links.join('<span class="sep">•</span>')}</div>` 
+      : '';
+
+    return `
+      <div class="project-card">
+        <div class="card-header">
+          <h3 class="card-title">${project.title ?? 'Untitled Project'}</h3>
+          ${project.year ? `<span class="card-date">${project.year}</span>` : ''}
+        </div>
+        ${tagsHtml}
+        ${project.description ? `<p class="card-desc">${project.description}</p>` : ''}
+        ${linksHtml}
+      </div>
+    `;
+  }).join('');
+
+  containerElement.innerHTML = html;
+}
+
+// --------------------------
+// Load & render projects
+// --------------------------
+async function loadProjects() {
+  const projects = await fetchJSON('../lib/projects.json');
+  const container = document.querySelector('.projects-grid');
+  if (projects && container) {
+    renderProjectCards(projects, container);
   }
-
-  const projectsTitle = document.querySelector('.projects-title');
-  projectsTitle.textContent = `${visibleProjects.length} Project${visibleProjects.length !== 1 ? 's' : ''}`;
-
-  renderProjects(visibleProjects, document.querySelector('.projects'), 'h2');
-
-  // Always render pie with only search-filtered data
-  renderPieChart(searchFiltered);
 }
 
-async function showProjects() {
-  allProjects = await fetchJSON('../lib/projects.json');
-  updateUI();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const searchInput = document.querySelector('.searchBar');
-  searchInput.addEventListener('input', event => {
-    query = event.target.value;
-    updateUI(); // ✅ keep both search + year filters active
-  });
-
-  showProjects();
-});
+loadProjects();

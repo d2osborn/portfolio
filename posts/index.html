@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light dark" />
-  <title>Projects - Diego Osborn</title>
+  <title>Blog - Diego Osborn</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body class="sub-page">
@@ -29,12 +29,28 @@
       </button>
     </header>
 
-    <h1 class="page-title">Selected Projects</h1>
+    <h1 class="page-title">Blog</h1>
     
-    <div class="projects-grid"></div>
+    <div class="empty-state">
+      <p>No posts yet. Currently working on some stuff... :)</p>
+    </div>
 
   </main>
 
-  <script type="module" src="projects.js"></script>
+  <script>
+    // --------------------------
+    // Dark / Light theme toggle
+    // --------------------------
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        sessionStorage.setItem(
+          'theme',
+          document.body.classList.contains('dark') ? 'dark' : 'light'
+        );
+      });
+    }
+  </script>
 </body>
 </html>
