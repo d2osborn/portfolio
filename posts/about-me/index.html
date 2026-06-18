@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="My Blog's first entry -- it's an about me section." />
+  <title>A Little About Me - Diego Osborn</title>
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- KaTeX for math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });"></script>
+</head>
+<body class="sub-page blog-post">
+
+  <!-- Apply dark mode before paint to prevent flash -->
+  <script>
+    const theme = sessionStorage.getItem('theme');
+    const match = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if ((theme && theme === 'dark') || (!theme && match)) {
+      document.body.classList.add('dark');
+    }
+  </script>
+
+  <main>
+    <!-- Sub-page header with back link and theme toggle -->
+    <header class="sub-header">
+      <a href="../" class="back-link">← Back to blogs</a>
+
+      <button id="theme-toggle" aria-label="theme switch">
+        <span class="moon-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+        <span class="sun-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+      </button>
+    </header>
+
+    <!-- this is where my writing starts -->
+    <article class="prose post-article">
+      <h1>A Little About Me</h1>
+      <div class="post-meta">
+        <span class="post-date">06-17-2026</span>
+      </div>
+
+      <p>
+        <em>Hi y'all! Welcome to the first entry of my blog.
+            I'll be using this space to share some of the work that I want to work on that isn't too formal. 
+            Surprise, surprise...it's probably going to be
+            pretty Bayesian-coded haha!
+        </em>
+      </p>
+
+      <h2>About Me</h2>
+      <p>
+        Currently, I am a recent graduate of UC San Diego where I studied data science.
+        During my time at UC San Diego, I was fortunate enough to have interned for the school's
+        d1 baseball team as a data scientist. 
+        I worked primarily with the pitching team, in which I'd help out the pitching coach 
+        by developing tools/analyses for player evaluation purposes. 
+        I worked on some other stuff too like a pitch classification pipeline 
+        and a cloud data pipeline - which made life easier for everyone. 
+      </p>
+
+      <figure class="post-img">
+        <img src="figure_1.png" alt="Image of Big West Championship Trophy"/>
+        <figcaption>Helped the team win the 2023 Big West Championship my first year, which was pretty cool.
+          What sucked was that we had recently just become a d1 team, which meant that we were ineligible for the playoffs that year.
+        </figcaption>
+      </figure>
+
+      <p>
+        My career interests are pretty much bound to sports analytics - but in particular baseball! 
+        I've not only had the pleasure of working within a college baseball organization, work on baseball projects for classes, but I've also 
+        gotten to go to the SABR Analytics Conference twice (in 2025 and 2026) -
+        thank you <a href="https://www.linkedin.com/in/tyronebrooks/">Tyrone Brooks</a>!
+      </p>
+
+      <figure class="post-img">
+        <img src="figure_2.png" alt="Image of SABR Analytics Conference 2026"/>
+        <figcaption> Got to go to a Royals M's game as part of my trip to Phoenix for the 2026 SABR Analytics Conference.
+        </figcaption>
+      </figure>
+
+      <p>
+        There are, of course, a variety of positions within a baseball front office, however, given my technical nature, 
+        my career goal is to work as a data scientist/quantitative analyst/r&d analyst/baseball analyst - whatever you want to call it haha - 
+        and work on creating baseball solutions for baseball problems. 
+        I'm also more interested in the research side of things - such as using probabilistic modeling for long-term problems like player projections!
+      </p>
+
+      <p>
+        In my free time, I enjoy listening to music (love The Strokes and all things indie), watching movies (anything Wes Anderson, Quentin Tarantino, or Tim Burton), 
+        and playing video games (MLB the Show Franchise fein).
+      </p>
+
+      <h2>My Work</h2>
+      <p>
+        I've already touched on some of the stuff I worked on for the school team, 
+        so I'll touch on other projects I worked on that I'm proud of - and that also reflect my interest in baseball.
+      </p>
+      <p>
+        To give a bit of context as to the nature of my projects: for the past year or so, I've become really interested in Bayesian statistics. 
+        I think how I came to be is a question that I'm not even really sure the answer to haha. My guess is that I watched a youtube video titled
+        "the hidden side of statistics", or something of the nature, and found out that it had applications in baseball that looked cool. 
+        I also came to realize that Bayesian statistics is by no means an easy concept to grasp at first.
+      </p>
+      <p>
+        Which leads to the first baseball/Bayesian project I did, which was: 
+        <em>Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model</em>, as a part of the 2025 SMT Data Challenge.
+        This project was my first time ever doing any form of Bayesian modeling - and it is apparent when looking at the model architecture and specifications. 
+        Basically, using spatiotemporal player- and ball-tracking data, I tried to infer the probability that any given outfielder 
+        would be "aggressive" on a ball in-play to the outfield. This project gave me a good amount of practice with working with tracking data - 
+        also good refreshers in trigonometry and calculus haha - and just gave me a better idea as to how Bayesian models work. 
+        I was also fortunate enough to have been recognized as an honorable mention finalist in the whole competition!
+      </p>
+      <p>
+        The second project that I did was a class project I did for my graduate astrostatistics course, which was:
+        <em>Probabilistic Modeling of True Hitting Talent in Major League Baseball</em>. 
+        I realized in interviews with MLB teams that I would say I'm interested in the player projections side of baseball,
+        yet, at those points in time, I had <em>zero</em> projects as to where I did just that. 
+        The grad class covered Bayesian statistics, so I learned about hierarchical Bayes, 
+        Gaussian processes, and different forms of posterior estimation (i.e., MCMC and VI).
+        So this project was basically just applying all of that to create a more complex MARCEL - 
+        since I couldn't do an actual astrophysics final project for the class since I am by no means a grad astrophysics student haha. 
+      </p>
+      <p>
+        This is all I have up til this point where I applied Bayesian statistics within a baseball setting, but there will be, of course, more to come eventually!
+      </p>
+
+      <h2>My Blog</h2>
+      <p>
+        This blog is meant to journal any progress I make in becoming a better data scientist - and Bayesian.
+        To start off the technical content of this blog, 
+        I'm going to be reading the chapters of <a href="https://sites.stat.columbia.edu/gelman/book/BDA3.pdf">BDA3</a> throughout the summer, 
+        summarize what I learned in each chapter, and implement what I learned within a baseball context - naturally.
+      </p>
+      <p>
+        Thank you for reading and I hope you'll enjoy the content that I'll be putting out!
+      </p>
+      <p>
+        Best, Diego
+      </p>
+
+    </article>
+  </main>
+
+  <script>
+    // --------------------------
+    // Dark / Light theme toggle
+    // --------------------------
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        sessionStorage.setItem(
+          'theme',
+          document.body.classList.contains('dark') ? 'dark' : 'light'
+        );
+      });
+    }
+  </script>
+</body>
+</html>
