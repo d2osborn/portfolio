@@ -348,7 +348,7 @@ body.dark #theme-toggle .moon-icon { display: none; }
 
 .award-head .title {
   font-weight: 500;
-  color: var(--text);
+  color: var(--primary);
 }
 
 .award-head .date {
@@ -361,7 +361,7 @@ body.dark #theme-toggle .moon-icon { display: none; }
 .award > p {
   margin: 0.25em 0 0;
   font-size: 0.95em;
-  color: var(--text-pale);
+  color: var(--text);
   line-height: 1.6;
 }
 
