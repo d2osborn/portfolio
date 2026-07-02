@@ -84,11 +84,9 @@
         where $p(x)$ is the marginal likelihood, which is the normalizing constant that ensures the posterior distribution sums to 1, and is itself given by:
         $$p(x) = \sum_{\theta} p(\theta)p(x\mid \theta)$$ in the discrete case, and
         $$p(x) = \int p(\theta)p(x\mid \theta)\, d\theta$$
-        in the continuous case. The observed data, $x$, can also <em>only</em> affect the posterior distribution through the likelihood function, $p(x\mid \theta)$.
-      </p> 
-      <p> $p(x)$ is typically also referred to as the marginal likelihood, but is actually more informative when referred to as the prior predictive distribution. 
-        Prior because it doesn't condition on a previous observation, and predictive because it's the distribution
-        for a quantity that is <em>observable</em>.
+        in the continuous case. The observed data, $x$, can also <em>only</em> affect the posterior distribution through the likelihood function, $p(x\mid \theta)$. 
+        It is is actually more informative when $p(x)$ is referred to as the prior predictive distribution rather than marginal likelihood. 
+        Prior because it doesn't condition on a previous observation, and predictive because it's the distribution for a quantity that is <em>observable</em>.
         Because $p(x)$ does not depend on $\theta$, we can also write the posterior as:
         $$\pi(\theta \mid x) \propto p(\theta)p(x\mid \theta)$$
         to yield the <em>unnormalized</em> posterior distribution. 
@@ -120,7 +118,7 @@
           then it might not be wise to take that bet even if you do have some probability of success.
         </li>
       </ol>
-      <p> Gelman concludes the chapter by describing the reasons as to why to use Bayesian statistics: </p>
+      <p> Gelman concludes the chapter by describing the reasons as to why Bayesian statistics is useful: </p>
       <ol>
         <li> There is much flexibility because of the possible incorporation of multiple levels of randomness, the possible ability to combine information
           from different sources, and the possible incorporation of reasonable sources of uncertainty in inferential summaries.</li>
@@ -129,8 +127,8 @@
       </ol>
 
       <p> This chapter pretty much just introduces the foundational concepts of Bayesian statistics, and the rest of the chapters will build upon these foundations. 
-        He also defines an applied Bayesian scientist as one who is <em>willing</em> to apply Bayes' rule under a variety of possible models. And another neat thing
-        about Bayesian inference is the idea of Bayesian updating, in which "yesterday's posterior is today's prior." 
+        <!-- He also defines an applied Bayesian scientist as one who is <em>willing</em> to apply Bayes' rule under a variety of possible models. And another neat thing
+        about Bayesian inference is the idea of Bayesian updating, in which "yesterday's posterior is today's prior."  -->
       </p>
 
 
@@ -152,7 +150,7 @@
         Let $\theta$ be the player's true batting average - or the probability of getting a hit in any given at-bat. 
         We'll model each at-bat as an independent Bernoulli trial with success probability $\theta$. Given $n$ at-bats with $y$ hits,
         the likelihood function is:
-        $$y \mid \theta \sim \text{Binomial}(n, \theta).$$
+        $$y \mid \theta \sim \text{Bin}(n, \theta).$$
       </p>
 
       <h3>Choosing a prior</h3>
@@ -247,7 +245,7 @@ plt.show() </code></pre>
 
       <p>
         To me, Bayesian inference is just the formal, probabilistic version of something baseball people do intuitively: you don't believe a guy is a .500 hitter after 20 at-bats. 
-        Bayes' theorem makes that intuition rigorous.
+        Bayes' rule makes that intuition rigorous.
       </p>
 
       <h2>References</h2>
