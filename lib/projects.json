@@ -3,7 +3,7 @@
 "title": "An Analysis of Spatial Homicide Patterns in Chicago",
 "year": "Jan 2026 - Jun 2026",
 "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-"description": "Quantified the structural drivers of urban violence and crime in Chicago utilizing spatial clustering, dimensionality reduction, gradient boosted trees, and regression analyses on 8.4M crime records across a 500m hexagonal grid.",
+"description": "Explored the spatial and socioeconomic drivers behind Chicago's homicide patterns, analyzing 8.4 million crime records to pinpoint where the city's violence was actually concentrated.",
 "tags": [""],
 "github": "https://github.com/DylanBerry1/gun-violence-analysis",
 "paper": "https://drive.google.com/file/d/1_UQoZRgyMybrSLEAEGrw9m_k6MltZIIp/view?usp=sharing"
@@ -21,7 +21,7 @@
 "title": "Probabilistic Modeling of True Hitting Talent in Major League Baseball",
 "year": "Feb 2026 - Mar 2026",
 "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-"description": "Architected a hierarchical Bayesian projection model utilizing Gaussian processes in NumPyro and JAX to estimate and forecast true-talent home run rates, improving out-of-sample accuracy by 31% against benchmarks. Developed a Streamlit dashboard to visualize player-level HR projections with uncertainty intervals.",
+"description": "Built an MLB home run projection system to estimate underlying hitting talent from a player's batted-ball profile rather than relying solely on noisy home run counts.",
 "tags": [""],
 "github": "https://github.com/d2osborn/probabilistic_projection_project",
 "url": "https://bayesian-proj-hrs-2026.streamlit.app/",
@@ -48,7 +48,7 @@
 "title": "Sean McVAI: Beating Two-High Coverage",
 "year": "Feb 2026",
 "image":  "images/mcvai.svg",
-"description": "Forecasted expected yardage of offensive play designs using gradient boosted trees and presented findings to NFL analysts via an interactive Streamlit dashboard at the 2026 Football Analytics Blitz (15 teams, ~70 students).",
+"description": "Evaluated NFL offensive play designs against two-high coverage, estimating the expected yardage associated with different ways of attacking the defensive alignment.",
 "tags": [""],
 "github": "https://github.com/pranavrajaram/football-analytics-blitz-2026",
 "url": "https://seanmcvai.streamlit.app/"
@@ -57,7 +57,7 @@
 "title": "Bayesball in the Outfield: Quantifying Defensive Aggression With a Bayesian Hierarchical Model",
 "year": "Jun 2025 - Aug 2025",
 "image":  "images/aoe_paper.svg",
-"description": "Built a hierarchical Bayesian framework in PyMC to estimate latent defensive aggression rates from spatiotemporal tracking data, utilizing catch probability estimates modeled with a generalized additive model in pyGAM. Top 10 finalist among 50 teams in the 2025 SMT Data Challenge.",
+"description": "Developed an Aggression Over Expected metric to quantify how aggressively outfielders approach balls in play while accounting for differences in position and opportunity.",
 "tags": [""],
 "github": "https://github.com/d2osborn/SMTChallenge2025",
 "paper": "https://drive.google.com/file/d/1NBRYg4iK25ujGmeTwnCMg5J6HeLlYFcP/view?usp=sharing"
@@ -66,7 +66,7 @@
 "title": "The Effect of Two Strikes on a Hitter's Swing",
 "year": "Apr 2025 - May 2025",
 "image":  "images/two_strikes.svg",
-"description": "Created an interactive website using Python and D3.js, utilizing 700,000+ MLB Statcast records, to analyze relationships between deviations in swing mechanics and offensive outcomes in high-pressure contexts.",
+"description": "Analyzed how MLB hitters adjust their swing mechanics in two-strike counts, using Statcast data to visualize changes in approach and contact.",
 "tags": [""],
 "github": "https://github.com/d2osborn/dsc106-finalproject",
 "url": "https://d2osborn.github.io/dsc106-finalproject/"
