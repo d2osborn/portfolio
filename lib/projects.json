@@ -9,13 +9,13 @@
 "paper": "https://drive.google.com/file/d/1_UQoZRgyMybrSLEAEGrw9m_k6MltZIIp/view?usp=sharing"
 },
 {
-"title": "Hidden NAFSI Predictive Modeling for Agricultural Resilience",
+"title": "NAFSI Predictive Modeling for Agricultural Resilience",
 "year": "Apr 2026",
 "image":  "https://dsc106.com/labs/lab02/images/empty.svg",
-"description": "Developed a probabilistic vegetation model utilizing Hilbert Space Gaussian Processes in NumPyro and JAX to predict seasonal crop growth trajectories for corn, soybean, and winter wheat across the U.S. Corn Belt. 1st place recognition among all competing teams in the inaugural 2026 NAFSI Student Data Challenge, earning the $2,000 top prize.",
+"description": "Built a probabilistic crop growth model to track how corn, soybean, and winter wheat develop throughout a year, across years, from satellite imagery.",
 "tags": [""],
 "github": "https://github.com/sardorsob/GeoCrop-Spatiotemporal-Modeling",
-"paper": "https://link-to-your-pdf.com/paper.pdf"
+"paper": "https://drive.google.com/file/d/1oPod_cfjHi7keORW3OAnhfs3P8_9qs96/view?usp=sharing"
 },
 {
 "title": "Probabilistic Modeling of True Hitting Talent in Major League Baseball",
