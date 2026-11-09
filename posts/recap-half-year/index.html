@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="My Blog's first entry -- it's an about me section." />
+  <title>A Little About Me - Diego Osborn</title>
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- KaTeX for math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });"></script>
+</head>
+<body class="sub-page blog-post">
+
+  <!-- Apply dark mode before paint to prevent flash -->
+  <script>
+    const theme = sessionStorage.getItem('theme');
+    const match = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if ((theme && theme === 'dark') || (!theme && match)) {
+      document.body.classList.add('dark');
+    }
+  </script>
+
+  <main>
+    <!-- Sub-page header with back link and theme toggle -->
+    <header class="sub-header">
+      <a href="../" class="back-link">← Back to blogs</a>
+
+      <button id="theme-toggle" aria-label="theme switch">
+        <span class="moon-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+        <span class="sun-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+      </button>
+    </header>
+
+    <!-- this is where my writing starts -->
+    <article class="prose post-article">
+      <h1>Life Since Graduation</h1>
+      <div class="post-meta">
+        <span class="post-date">11-08-2026</span>
+      </div>
+
+      <p>
+        <em>Hi y'all! Welcome to the third entry of my blog.
+            I know it's been awhile since I've posted anything haha, but I just wanted to share a little about what has happened and 
+            what I've been working on - or at least tried to - since my last post!
+            <!-- I'll be using this space to share some of the work that I want to work on that isn't too formal. 
+            Surprise, surprise...it's probably going to be
+            pretty Bayesian-coded haha! -->
+        </em>
+      </p>
+
+      <h2>Where We Last Left Off</h2>
+      <p>
+        So the last blog post I made was discussing
+        <a href="https://d2osborn.github.io/portfolio/posts/bda-baseball-ch1/" target="_blank">
+            Chapter 1 of Bayesian Data Analysis (BDA)
+        </a>
+        by Gelman et al., back in July.
+        Obviously this seems like awhile now - about 4 months at the time of this writing - so it's perfectly
+        reasonable for one to ask <em>why</em> I stopped covering the rest of the chapters.
+        The honest answer is that it was a bit of burnout and trying to work on multiple things at once. 
+        Which is exactly what I want to cover with this post - basically <em>what</em> it was that I was and have been working on!
+      </p>
+
+      <h2>Graduate School?</h2>
+      <p>
+        So, to start, I've been working on graduate school applications for the upcoming Fall 2027 cycle. 
+        So since July, I've spent a good amount of time researching programs, refining my resume/CV, and working on my application essays. 
+        As you can probably gather from my portfolio and resume, I have a particular fondness for Bayesian statistics, 
+        so graduate school seemed like a natural next step to explore that interest more formally and in greater depth.
+        With that in mind, I focused exclusively on Statistics programs that either had a strong Bayesian focus or at least
+        offered multiple courses in the subject. 
+        This has been one of the bigger projects I've been working on since July, but I'm happy to say that the 
+        need to pursue graduate school isn't quite as pressing as it once was - which I'll get into in a bit.
+      </p>
+
+      <h2>Catch Probability Project</h2>
+      <p>
+        So besides applying to graduate school, I had also been trying to work on my own personal baseball data science problem.
+        More specifically, I was trying to "fix" the catch probability issue of attaching blame only to <em>one</em> fielder, and especially
+        when they weren't the fielder who actually made the attempt - e.g., a CF calling off the LF and misses it, but the LF ends up getting the loss in OAA.
+        So using publicly available Statcast data, I was trying to work on a new approach of modeling catch probability. 
+        At least, that was the goal. For the same reason as the other projects I worked on, I ended up going on what is essentially a hiatus for this project. 
+        I did make some progress with feature engineering, but that was as far as I got. I hope to come back to it in the future when I have the time to just 
+        focus on it without other pressing projects to work on. For reference, here is the 
+        <a href="https://github.com/d2osborn/catch_prob">GitHub repository</a> 
+        if you care to see the little progress I had made haha!
+      </p>
+
+      <h2>Saberseminar</h2>
+      <p>
+        I also had the pleasure of attending the 
+        <a href="https://www.saberseminar.com/" target="_blank">
+            Saberseminar conference
+        </a> in Chicago, in late August, and I truly believe that this is one of the most 
+        memorable and influential experiences I've had with respect to my career path. At the conference, I had the 
+        privilege of meeting with a number of people already in the baseball analytics industry, and I got to learn a bit about them,
+        their career paths, and about how their R&D group operates and the kind of work they do. Getting to pick the brains of these people
+        and also share my own goals and passions is <em>very</em> valuable, and for anyone who is interested in working baseball, I highly, highly recommend attending Saberseminar. 
+      </p>
+
+      <!-- <figure class="post-img">
+        <img src="figure_1.png" alt="Image of Lance Brozdowski and I at Saberseminar"/>
+        <figcaption>
+            A photo of the GOAT, 
+            <a href="https://x.com/LanceBroz" target="_blank">
+                Lance Brozdowski
+            </a>, and I at Saberseminar.
+        </figcaption>
+      </figure> -->
+
+      <h2>Big Data Bowl</h2>
+      <p>
+        This is more recent, but I am also participating in the 
+        <a href="https://www.kaggle.com/competitions/nfl-big-data-bowl-2027" target="_blank">
+            2027 NFL Big Data Bowl
+        </a>. I think the prompt this year is really interesting - essentially using combine tracking data and translating <em>that</em> to outcomes at the NFL level - 
+        so I knew that this kind of project is a perfect opportunity to further explore some statistical techniques and methodologies I'm interested in. 
+        It also just provides the kind of data that isn't publicly available. 
+        I'm also a huge football fan - GO HAWKS! Submissions are due sometime in January, so I'll be sure to share what I come up with then
+         - probably on my 
+        <a href="https://x.com/diegosborn" target="_blank">
+            Twitter
+        </a>/<a href="https://bsky.app/profile/diegosborn.bsky.social" target="_blank">
+            Bluesky
+        </a> or 
+        <a href="https://www.linkedin.com/in/diego-osborn/" target="_blank">
+            LinkedIn
+        </a>, or all three.
+      </p>
+
+      <h2>A New Job?</h2>
+      <p>
+        I am also excited to share that I will be joining the Texas Rangers in their R&D department as a Baseball Analytics Apprentice this coming January!!!
+        I cannot put into words how excited I am to have received this opportunity, and as you can see from my 
+        portfolio and blog posts, I am extremely passionate about baseball analytics, so this is an unbelievably huge opportunity for me.
+        Really everything I have worked for was for an opportunity like this, and I only hope to continue learning more and more as I move forward in my career.
+        I'm really grateful to the Texas Rangers for giving me this opportunity, and also just everyone else who has supported me and helped me get here throughout - 
+        especially my wonderful girlfriend, my family, friends, the UCSD baseball team, professors, baseball people, and the baseball community on Twitter!!!
+      </p>
+      <p>
+        That's all I have to share at the moment, but thank you so much for reading!
+      </p>
+      <p>
+        Best, Diego
+      </p>
+
+    </article>
+  </main>
+
+  <script>
+    // --------------------------
+    // Dark / Light theme toggle
+    // --------------------------
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        sessionStorage.setItem(
+          'theme',
+          document.body.classList.contains('dark') ? 'dark' : 'light'
+        );
+      });
+    }
+  </script>
+</body>
+</html>

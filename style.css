@@ -4,9 +4,9 @@
    Light mode colors (default)
    ============================================ */
 body {
-  --primary: #734F96;
-  --primary-pale: #2a9d7e33;
-  --primary-decoration: #2a9d7e10;
+  --primary: #003278;
+  --primary-pale: #00327833;
+  --primary-decoration: #00327810;
   --bg: #f6f8f7;
   --text: #1c2127;
   --text-pale: #636d79;
@@ -21,9 +21,9 @@ body {
    Dark mode colors
    ============================================ */
 body.dark {
-  --primary: #8e82fe;
-  --primary-pale: #63c5a844;
-  --primary-decoration: #63c5a812;
+  --primary: #6B91C9;
+  --primary-pale: #6B91C944;
+  --primary-decoration: #6B91C912;
   /* --bg: #0f1115; */
   --bg: #212121;
   --text: #c8ccd3;
